@@ -1,0 +1,924 @@
+time="2024-10-02T17:04:14Z" level=info msg="Starting k3s v1.26.4+k3s1 (8d0255af)"
+time="2024-10-02T17:04:14Z" level=info msg="Managed etcd cluster initializing"
+time="2024-10-02T17:04:14Z" level=info msg="generated self-signed CA certificate CN=k3s-client-ca@1727888654: notBefore=2024-10-02 17:04:14.331948627 +0000 UTC notAfter=2034-09-30 17:04:14.331948627 +0000 UTC"
+time="2024-10-02T17:04:14Z" level=info msg="certificate CN=system:admin,O=system:masters signed by CN=k3s-client-ca@1727888654: notBefore=2024-10-02 17:04:14 +0000 UTC notAfter=2025-10-02 17:04:14 +0000 UTC"
+time="2024-10-02T17:04:14Z" level=info msg="certificate CN=system:kube-controller-manager signed by CN=k3s-client-ca@1727888654: notBefore=2024-10-02 17:04:14 +0000 UTC notAfter=2025-10-02 17:04:14 +0000 UTC"
+time="2024-10-02T17:04:14Z" level=info msg="certificate CN=system:kube-scheduler signed by CN=k3s-client-ca@1727888654: notBefore=2024-10-02 17:04:14 +0000 UTC notAfter=2025-10-02 17:04:14 +0000 UTC"
+time="2024-10-02T17:04:14Z" level=info msg="certificate CN=system:apiserver,O=system:masters signed by CN=k3s-client-ca@1727888654: notBefore=2024-10-02 17:04:14 +0000 UTC notAfter=2025-10-02 17:04:14 +0000 UTC"
+time="2024-10-02T17:04:14Z" level=info msg="certificate CN=system:kube-proxy signed by CN=k3s-client-ca@1727888654: notBefore=2024-10-02 17:04:14 +0000 UTC notAfter=2025-10-02 17:04:14 +0000 UTC"
+time="2024-10-02T17:04:14Z" level=info msg="certificate CN=system:k3s-controller signed by CN=k3s-client-ca@1727888654: notBefore=2024-10-02 17:04:14 +0000 UTC notAfter=2025-10-02 17:04:14 +0000 UTC"
+time="2024-10-02T17:04:14Z" level=info msg="certificate CN=k3s-cloud-controller-manager signed by CN=k3s-client-ca@1727888654: notBefore=2024-10-02 17:04:14 +0000 UTC notAfter=2025-10-02 17:04:14 +0000 UTC"
+time="2024-10-02T17:04:14Z" level=info msg="generated self-signed CA certificate CN=k3s-server-ca@1727888654: notBefore=2024-10-02 17:04:14.335794655 +0000 UTC notAfter=2034-09-30 17:04:14.335794655 +0000 UTC"
+time="2024-10-02T17:04:14Z" level=info msg="certificate CN=kube-apiserver signed by CN=k3s-server-ca@1727888654: notBefore=2024-10-02 17:04:14 +0000 UTC notAfter=2025-10-02 17:04:14 +0000 UTC"
+time="2024-10-02T17:04:14Z" level=info msg="generated self-signed CA certificate CN=k3s-request-header-ca@1727888654: notBefore=2024-10-02 17:04:14.336726666 +0000 UTC notAfter=2034-09-30 17:04:14.336726666 +0000 UTC"
+time="2024-10-02T17:04:14Z" level=info msg="certificate CN=system:auth-proxy signed by CN=k3s-request-header-ca@1727888654: notBefore=2024-10-02 17:04:14 +0000 UTC notAfter=2025-10-02 17:04:14 +0000 UTC"
+time="2024-10-02T17:04:14Z" level=info msg="generated self-signed CA certificate CN=etcd-server-ca@1727888654: notBefore=2024-10-02 17:04:14.337540593 +0000 UTC notAfter=2034-09-30 17:04:14.337540593 +0000 UTC"
+time="2024-10-02T17:04:14Z" level=info msg="certificate CN=etcd-server signed by CN=etcd-server-ca@1727888654: notBefore=2024-10-02 17:04:14 +0000 UTC notAfter=2025-10-02 17:04:14 +0000 UTC"
+time="2024-10-02T17:04:14Z" level=info msg="certificate CN=etcd-client signed by CN=etcd-server-ca@1727888654: notBefore=2024-10-02 17:04:14 +0000 UTC notAfter=2025-10-02 17:04:14 +0000 UTC"
+time="2024-10-02T17:04:14Z" level=info msg="generated self-signed CA certificate CN=etcd-peer-ca@1727888654: notBefore=2024-10-02 17:04:14.338798473 +0000 UTC notAfter=2034-09-30 17:04:14.338798473 +0000 UTC"
+time="2024-10-02T17:04:14Z" level=info msg="certificate CN=etcd-peer signed by CN=etcd-peer-ca@1727888654: notBefore=2024-10-02 17:04:14 +0000 UTC notAfter=2025-10-02 17:04:14 +0000 UTC"
+time="2024-10-02T17:04:14Z" level=info msg="Starting etcd for new cluster"
+time="2024-10-02T17:04:14Z" level=info msg=start
+time="2024-10-02T17:04:14Z" level=info msg="schedule, now=2024-10-02T17:04:14Z, entry=1, next=2024-10-03T00:00:00Z"
+time="2024-10-02T17:04:14Z" level=info msg="certificate CN=k3s,O=k3s signed by CN=k3s-server-ca@1727888654: notBefore=2024-10-02 17:04:14 +0000 UTC notAfter=2025-10-02 17:04:14 +0000 UTC"
+time="2024-10-02T17:04:14Z" level=warning msg="dynamiclistener [::]:6443: no cached certificate available for preload - deferring certificate load until storage initialization or first client request"
+time="2024-10-02T17:04:14Z" level=info msg="Active TLS secret / (ver=) (count 10): map[listener.cattle.io/cn-10.43.0.1:10.43.0.1 listener.cattle.io/cn-127.0.0.1:127.0.0.1 listener.cattle.io/cn-172.19.0.2:172.19.0.2 listener.cattle.io/cn-__1-f16284:::1 listener.cattle.io/cn-kubernetes:kubernetes listener.cattle.io/cn-kubernetes.default:kubernetes.default listener.cattle.io/cn-kubernetes.default.svc:kubernetes.default.svc listener.cattle.io/cn-kubernetes.default.svc.cluster.local:kubernetes.default.svc.cluster.local listener.cattle.io/cn-local-node:local-node listener.cattle.io/cn-localhost:localhost listener.cattle.io/fingerprint:SHA1=487840810904B676D67C3B418CE8D6688D47E932]"
+{"level":"info","ts":"2024-10-02T17:04:14.673Z","caller":"embed/etcd.go:124","msg":"configuring peer listeners","listen-peer-urls":["https://127.0.0.1:2380","https://172.19.0.2:2380"]}
+{"level":"info","ts":"2024-10-02T17:04:14.673Z","caller":"embed/etcd.go:484","msg":"starting with peer TLS","tls-info":"cert = /var/lib/rancher/k3s/server/tls/etcd/peer-server-client.crt, key = /var/lib/rancher/k3s/server/tls/etcd/peer-server-client.key, client-cert=, client-key=, trusted-ca = /var/lib/rancher/k3s/server/tls/etcd/peer-ca.crt, client-cert-auth = true, crl-file = ","cipher-suites":[]}
+{"level":"info","ts":"2024-10-02T17:04:14.674Z","caller":"embed/etcd.go:132","msg":"configuring client listeners","listen-client-urls":["https://127.0.0.1:2379","https://172.19.0.2:2379"]}
+{"level":"info","ts":"2024-10-02T17:04:14.674Z","caller":"embed/etcd.go:306","msg":"starting an etcd server","etcd-version":"3.5.7","git-sha":"Not provided (use ./build instead of go build)","go-version":"go1.19.8","go-os":"linux","go-arch":"amd64","max-cpu-set":12,"max-cpu-available":12,"member-initialized":false,"name":"local-node-a26306d4","data-dir":"/var/lib/rancher/k3s/server/db/etcd","wal-dir":"","wal-dir-dedicated":"","member-dir":"/var/lib/rancher/k3s/server/db/etcd/member","force-new-cluster":false,"heartbeat-interval":"500ms","election-timeout":"5s","initial-election-tick-advance":true,"snapshot-count":10000,"max-wals":5,"max-snapshots":5,"snapshot-catchup-entries":5000,"initial-advertise-peer-urls":["https://172.19.0.2:2380"],"listen-peer-urls":["https://127.0.0.1:2380","https://172.19.0.2:2380"],"advertise-client-urls":["https://172.19.0.2:2379"],"listen-client-urls":["https://127.0.0.1:2379","https://172.19.0.2:2379"],"listen-metrics-urls":["http://127.0.0.1:2381"],"cors":["*"],"host-whitelist":["*"],"initial-cluster":"local-node-a26306d4=https://172.19.0.2:2380","initial-cluster-state":"new","initial-cluster-token":"etcd-cluster","quota-backend-bytes":2147483648,"max-request-bytes":1572864,"max-concurrent-streams":4294967295,"pre-vote":true,"initial-corrupt-check":true,"corrupt-check-time-interval":"0s","compact-check-time-enabled":false,"compact-check-time-interval":"1m0s","auto-compaction-mode":"","auto-compaction-retention":"0s","auto-compaction-interval":"0s","discovery-url":"","discovery-proxy":"","downgrade-check-interval":"5s"}
+{"level":"info","ts":"2024-10-02T17:04:14.681Z","caller":"etcdserver/backend.go:81","msg":"opened backend db","path":"/var/lib/rancher/k3s/server/db/etcd/member/snap/db","took":"5.848413ms"}
+{"level":"info","ts":"2024-10-02T17:04:14.684Z","caller":"etcdserver/raft.go:494","msg":"starting local member","local-member-id":"d7380397c3ec4b90","cluster-id":"17d3753d35ddbc03"}
+{"level":"info","ts":"2024-10-02T17:04:14.684Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"d7380397c3ec4b90 switched to configuration voters=()"}
+{"level":"info","ts":"2024-10-02T17:04:14.684Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"d7380397c3ec4b90 became follower at term 0"}
+{"level":"info","ts":"2024-10-02T17:04:14.684Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"newRaft d7380397c3ec4b90 [peers: [], term: 0, commit: 0, applied: 0, lastindex: 0, lastterm: 0]"}
+{"level":"info","ts":"2024-10-02T17:04:14.684Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"d7380397c3ec4b90 became follower at term 1"}
+{"level":"info","ts":"2024-10-02T17:04:14.684Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"d7380397c3ec4b90 switched to configuration voters=(15508149267212290960)"}
+{"level":"warn","ts":"2024-10-02T17:04:14.686Z","caller":"auth/store.go:1234","msg":"simple token is not cryptographically signed"}
+{"level":"info","ts":"2024-10-02T17:04:14.687Z","caller":"mvcc/kvstore.go:393","msg":"kvstore restored","current-rev":1}
+{"level":"info","ts":"2024-10-02T17:04:14.688Z","caller":"etcdserver/quota.go:94","msg":"enabled backend quota with default value","quota-name":"v3-applier","quota-size-bytes":2147483648,"quota-size":"2.1 GB"}
+{"level":"info","ts":"2024-10-02T17:04:14.689Z","caller":"etcdserver/server.go:854","msg":"starting etcd server","local-member-id":"d7380397c3ec4b90","local-server-version":"3.5.7","cluster-version":"to_be_decided"}
+{"level":"info","ts":"2024-10-02T17:04:14.689Z","caller":"etcdserver/server.go:738","msg":"started as single-node; fast-forwarding election ticks","local-member-id":"d7380397c3ec4b90","forward-ticks":9,"forward-duration":"4.5s","election-ticks":10,"election-timeout":"5s"}
+{"level":"info","ts":"2024-10-02T17:04:14.689Z","caller":"fileutil/purge.go:44","msg":"started to purge file","dir":"/var/lib/rancher/k3s/server/db/etcd/member/snap","suffix":"snap.db","max":5,"interval":"30s"}
+{"level":"info","ts":"2024-10-02T17:04:14.689Z","caller":"fileutil/purge.go:44","msg":"started to purge file","dir":"/var/lib/rancher/k3s/server/db/etcd/member/snap","suffix":"snap","max":5,"interval":"30s"}
+{"level":"info","ts":"2024-10-02T17:04:14.689Z","caller":"fileutil/purge.go:44","msg":"started to purge file","dir":"/var/lib/rancher/k3s/server/db/etcd/member/wal","suffix":"wal","max":5,"interval":"30s"}
+{"level":"info","ts":"2024-10-02T17:04:14.690Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"d7380397c3ec4b90 switched to configuration voters=(15508149267212290960)"}
+{"level":"info","ts":"2024-10-02T17:04:14.690Z","caller":"membership/cluster.go:421","msg":"added member","cluster-id":"17d3753d35ddbc03","local-member-id":"d7380397c3ec4b90","added-peer-id":"d7380397c3ec4b90","added-peer-peer-urls":["https://172.19.0.2:2380"]}
+{"level":"info","ts":"2024-10-02T17:04:14.691Z","caller":"embed/etcd.go:687","msg":"starting with client TLS","tls-info":"cert = /var/lib/rancher/k3s/server/tls/etcd/server-client.crt, key = /var/lib/rancher/k3s/server/tls/etcd/server-client.key, client-cert=, client-key=, trusted-ca = /var/lib/rancher/k3s/server/tls/etcd/server-ca.crt, client-cert-auth = true, crl-file = ","cipher-suites":[]}
+{"level":"info","ts":"2024-10-02T17:04:14.691Z","caller":"embed/etcd.go:586","msg":"serving peer traffic","address":"127.0.0.1:2380"}
+{"level":"info","ts":"2024-10-02T17:04:14.691Z","caller":"embed/etcd.go:558","msg":"cmux::serve","address":"127.0.0.1:2380"}
+{"level":"info","ts":"2024-10-02T17:04:14.691Z","caller":"embed/etcd.go:586","msg":"serving peer traffic","address":"172.19.0.2:2380"}
+{"level":"info","ts":"2024-10-02T17:04:14.691Z","caller":"embed/etcd.go:558","msg":"cmux::serve","address":"172.19.0.2:2380"}
+{"level":"info","ts":"2024-10-02T17:04:14.691Z","caller":"embed/etcd.go:275","msg":"now serving peer/client/metrics","local-member-id":"d7380397c3ec4b90","initial-advertise-peer-urls":["https://172.19.0.2:2380"],"listen-peer-urls":["https://127.0.0.1:2380","https://172.19.0.2:2380"],"advertise-client-urls":["https://172.19.0.2:2379"],"listen-client-urls":["https://127.0.0.1:2379","https://172.19.0.2:2379"],"listen-metrics-urls":["http://127.0.0.1:2381"]}
+{"level":"info","ts":"2024-10-02T17:04:14.691Z","caller":"embed/etcd.go:762","msg":"serving metrics","address":"http://127.0.0.1:2381"}
+time="2024-10-02T17:04:14Z" level=info msg="Tunnel server egress proxy mode: agent"
+time="2024-10-02T17:04:14Z" level=info msg="Tunnel server egress proxy waiting for runtime core to become available"
+time="2024-10-02T17:04:14Z" level=info msg="Running kube-apiserver --advertise-port=6443 --allow-privileged=true --anonymous-auth=false --api-audiences=https://kubernetes.default.svc.cluster.local,k3s --authorization-mode=Node,RBAC --bind-address=127.0.0.1 --cert-dir=/var/lib/rancher/k3s/server/tls/temporary-certs --client-ca-file=/var/lib/rancher/k3s/server/tls/client-ca.crt --egress-selector-config-file=/var/lib/rancher/k3s/server/etc/egress-selector-config.yaml --enable-admission-plugins=NodeRestriction --enable-aggregator-routing=true --enable-bootstrap-token-auth=true --etcd-cafile=/var/lib/rancher/k3s/server/tls/etcd/server-ca.crt --etcd-certfile=/var/lib/rancher/k3s/server/tls/etcd/client.crt --etcd-keyfile=/var/lib/rancher/k3s/server/tls/etcd/client.key --etcd-servers=https://127.0.0.1:2379 --feature-gates=JobTrackingWithFinalizers=true --kubelet-certificate-authority=/var/lib/rancher/k3s/server/tls/server-ca.crt --kubelet-client-certificate=/var/lib/rancher/k3s/server/tls/client-kube-apiserver.crt --kubelet-client-key=/var/lib/rancher/k3s/server/tls/client-kube-apiserver.key --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname --profiling=false --proxy-client-cert-file=/var/lib/rancher/k3s/server/tls/client-auth-proxy.crt --proxy-client-key-file=/var/lib/rancher/k3s/server/tls/client-auth-proxy.key --requestheader-allowed-names=system:auth-proxy --requestheader-client-ca-file=/var/lib/rancher/k3s/server/tls/request-header-ca.crt --requestheader-extra-headers-prefix=X-Remote-Extra- --requestheader-group-headers=X-Remote-Group --requestheader-username-headers=X-Remote-User --secure-port=6444 --service-account-issuer=https://kubernetes.default.svc.cluster.local --service-account-key-file=/var/lib/rancher/k3s/server/tls/service.key --service-account-signing-key-file=/var/lib/rancher/k3s/server/tls/service.current.key --service-cluster-ip-range=10.43.0.0/16 --service-node-port-range=30000-32767 --storage-backend=etcd3 --tls-cert-file=/var/lib/rancher/k3s/server/tls/serving-kube-apiserver.crt --tls-cipher-suites=TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384,TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384,TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256,TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256,TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305,TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305 --tls-private-key-file=/var/lib/rancher/k3s/server/tls/serving-kube-apiserver.key"
+time="2024-10-02T17:04:14Z" level=info msg="Running kube-scheduler --authentication-kubeconfig=/var/lib/rancher/k3s/server/cred/scheduler.kubeconfig --authorization-kubeconfig=/var/lib/rancher/k3s/server/cred/scheduler.kubeconfig --bind-address=127.0.0.1 --kubeconfig=/var/lib/rancher/k3s/server/cred/scheduler.kubeconfig --profiling=false --secure-port=10259"
+time="2024-10-02T17:04:14Z" level=info msg="Running kube-controller-manager --allocate-node-cidrs=true --authentication-kubeconfig=/var/lib/rancher/k3s/server/cred/controller.kubeconfig --authorization-kubeconfig=/var/lib/rancher/k3s/server/cred/controller.kubeconfig --bind-address=127.0.0.1 --cluster-cidr=10.42.0.0/16 --cluster-signing-kube-apiserver-client-cert-file=/var/lib/rancher/k3s/server/tls/client-ca.nochain.crt --cluster-signing-kube-apiserver-client-key-file=/var/lib/rancher/k3s/server/tls/client-ca.key --cluster-signing-kubelet-client-cert-file=/var/lib/rancher/k3s/server/tls/client-ca.nochain.crt --cluster-signing-kubelet-client-key-file=/var/lib/rancher/k3s/server/tls/client-ca.key --cluster-signing-kubelet-serving-cert-file=/var/lib/rancher/k3s/server/tls/server-ca.nochain.crt --cluster-signing-kubelet-serving-key-file=/var/lib/rancher/k3s/server/tls/server-ca.key --cluster-signing-legacy-unknown-cert-file=/var/lib/rancher/k3s/server/tls/server-ca.nochain.crt --cluster-signing-legacy-unknown-key-file=/var/lib/rancher/k3s/server/tls/server-ca.key --configure-cloud-routes=false --controllers=*,tokencleaner,-service,-route,-cloud-node-lifecycle --feature-gates=JobTrackingWithFinalizers=true --kubeconfig=/var/lib/rancher/k3s/server/cred/controller.kubeconfig --profiling=false --root-ca-file=/var/lib/rancher/k3s/server/tls/server-ca.crt --secure-port=10257 --service-account-private-key-file=/var/lib/rancher/k3s/server/tls/service.current.key --service-cluster-ip-range=10.43.0.0/16 --use-service-account-credentials=true"
+time="2024-10-02T17:04:14Z" level=info msg="Running cloud-controller-manager --allocate-node-cidrs=true --authentication-kubeconfig=/var/lib/rancher/k3s/server/cred/cloud-controller.kubeconfig --authorization-kubeconfig=/var/lib/rancher/k3s/server/cred/cloud-controller.kubeconfig --bind-address=127.0.0.1 --cloud-config=/var/lib/rancher/k3s/server/etc/cloud-config.yaml --cloud-provider=k3s --cluster-cidr=10.42.0.0/16 --configure-cloud-routes=false --controllers=*,-route,-service --kubeconfig=/var/lib/rancher/k3s/server/cred/cloud-controller.kubeconfig --leader-elect-resource-name=k3s-cloud-controller-manager --node-status-update-frequency=1m0s --profiling=false"
+time="2024-10-02T17:04:14Z" level=info msg="Server node token is available at /var/lib/rancher/k3s/server/token"
+time="2024-10-02T17:04:14Z" level=info msg="To join server node to cluster: k3s server -s https://172.19.0.2:6443 -t ${SERVER_NODE_TOKEN}"
+time="2024-10-02T17:04:14Z" level=info msg="Agent node token is available at /var/lib/rancher/k3s/server/agent-token"
+time="2024-10-02T17:04:14Z" level=info msg="To join agent node to cluster: k3s agent -s https://172.19.0.2:6443 -t ${AGENT_NODE_TOKEN}"
+time="2024-10-02T17:04:14Z" level=info msg="Wrote kubeconfig /etc/rancher/k3s/k3s.yaml"
+time="2024-10-02T17:04:14Z" level=info msg="Run: k3s kubectl"
+time="2024-10-02T17:04:14Z" level=info msg="certificate CN=local-node signed by CN=k3s-server-ca@1727888654: notBefore=2024-10-02 17:04:14 +0000 UTC notAfter=2025-10-02 17:04:14 +0000 UTC"
+time="2024-10-02T17:04:14Z" level=info msg="certificate CN=system:node:local-node,O=system:nodes signed by CN=k3s-client-ca@1727888654: notBefore=2024-10-02 17:04:14 +0000 UTC notAfter=2025-10-02 17:04:14 +0000 UTC"
+time="2024-10-02T17:04:14Z" level=warning msg="Host resolv.conf includes loopback or multicast nameservers - kubelet will use autogenerated resolv.conf with nameserver 8.8.8.8"
+time="2024-10-02T17:04:14Z" level=info msg="Module overlay was already loaded"
+time="2024-10-02T17:04:14Z" level=info msg="Module nf_conntrack was already loaded"
+time="2024-10-02T17:04:14Z" level=info msg="Module br_netfilter was already loaded"
+time="2024-10-02T17:04:14Z" level=info msg="Module iptable_nat was already loaded"
+time="2024-10-02T17:04:14Z" level=info msg="Module iptable_filter was already loaded"
+time="2024-10-02T17:04:14Z" level=info msg="Set sysctl 'net/netfilter/nf_conntrack_max' to 393216"
+time="2024-10-02T17:04:14Z" level=error msg="Failed to set sysctl: open /proc/sys/net/netfilter/nf_conntrack_max: permission denied"
+time="2024-10-02T17:04:14Z" level=info msg="Set sysctl 'net/netfilter/nf_conntrack_tcp_timeout_established' to 86400"
+time="2024-10-02T17:04:14Z" level=info msg="Set sysctl 'net/netfilter/nf_conntrack_tcp_timeout_close_wait' to 3600"
+time="2024-10-02T17:04:14Z" level=info msg="Logging containerd to /var/lib/rancher/k3s/agent/containerd/containerd.log"
+time="2024-10-02T17:04:14Z" level=info msg="Running containerd -c /var/lib/rancher/k3s/agent/etc/containerd/config.toml -a /run/k3s/containerd/containerd.sock --state /run/k3s/containerd --root /var/lib/rancher/k3s/agent/containerd"
+time="2024-10-02T17:04:15Z" level=info msg="containerd is now running"
+time="2024-10-02T17:04:15Z" level=info msg="Connecting to proxy" url="wss://127.0.0.1:6443/v1-k3s/connect"
+time="2024-10-02T17:04:15Z" level=info msg="Running kubelet --address=0.0.0.0 --anonymous-auth=false --authentication-token-webhook=true --authorization-mode=Webhook --cgroup-driver=cgroupfs --client-ca-file=/var/lib/rancher/k3s/agent/client-ca.crt --cloud-provider=external --cluster-dns=10.43.0.10 --cluster-domain=cluster.local --container-runtime-endpoint=unix:///run/k3s/containerd/containerd.sock --containerd=/run/k3s/containerd/containerd.sock --eviction-hard=imagefs.available<5%,nodefs.available<5% --eviction-minimum-reclaim=imagefs.available=10%,nodefs.available=10% --fail-swap-on=false --healthz-bind-address=127.0.0.1 --hostname-override=local-node --kubeconfig=/var/lib/rancher/k3s/agent/kubelet.kubeconfig --kubelet-cgroups=/k3s --node-labels= --pod-infra-container-image=rancher/mirrored-pause:3.6 --pod-manifest-path=/var/lib/rancher/k3s/agent/pod-manifests --read-only-port=0 --resolv-conf=/var/lib/rancher/k3s/agent/etc/resolv.conf --runtime-cgroups=/k3s --serialize-image-pulls=false --tls-cert-file=/var/lib/rancher/k3s/agent/serving-kubelet.crt --tls-private-key-file=/var/lib/rancher/k3s/agent/serving-kubelet.key"
+time="2024-10-02T17:04:15Z" level=info msg="Handling backend connection request [local-node]"
+time="2024-10-02T17:04:15Z" level=info msg="Waiting to retrieve kube-proxy configuration; server is not ready: https://127.0.0.1:6443/v1-k3s/readyz: 500 Internal Server Error"
+{"level":"info","ts":"2024-10-02T17:04:17.685Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"d7380397c3ec4b90 is starting a new election at term 1"}
+{"level":"info","ts":"2024-10-02T17:04:17.685Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"d7380397c3ec4b90 became pre-candidate at term 1"}
+{"level":"info","ts":"2024-10-02T17:04:17.685Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"d7380397c3ec4b90 received MsgPreVoteResp from d7380397c3ec4b90 at term 1"}
+{"level":"info","ts":"2024-10-02T17:04:17.685Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"d7380397c3ec4b90 became candidate at term 2"}
+{"level":"info","ts":"2024-10-02T17:04:17.685Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"d7380397c3ec4b90 received MsgVoteResp from d7380397c3ec4b90 at term 2"}
+{"level":"info","ts":"2024-10-02T17:04:17.685Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"d7380397c3ec4b90 became leader at term 2"}
+{"level":"info","ts":"2024-10-02T17:04:17.685Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"raft.node: d7380397c3ec4b90 elected leader d7380397c3ec4b90 at term 2"}
+{"level":"info","ts":"2024-10-02T17:04:17.686Z","caller":"etcdserver/server.go:2573","msg":"setting up initial cluster version using v2 API","cluster-version":"3.5"}
+{"level":"info","ts":"2024-10-02T17:04:17.686Z","caller":"embed/serve.go:100","msg":"ready to serve client requests"}
+{"level":"info","ts":"2024-10-02T17:04:17.686Z","caller":"embed/serve.go:100","msg":"ready to serve client requests"}
+{"level":"info","ts":"2024-10-02T17:04:17.686Z","caller":"etcdserver/server.go:2064","msg":"published local member to cluster through raft","local-member-id":"d7380397c3ec4b90","local-member-attributes":"{Name:local-node-a26306d4 ClientURLs:[https://172.19.0.2:2379]}","request-path":"/0/members/d7380397c3ec4b90/attributes","cluster-id":"17d3753d35ddbc03","publish-timeout":"15s"}
+{"level":"info","ts":"2024-10-02T17:04:17.686Z","caller":"membership/cluster.go:584","msg":"set initial cluster version","cluster-id":"17d3753d35ddbc03","local-member-id":"d7380397c3ec4b90","cluster-version":"3.5"}
+{"level":"info","ts":"2024-10-02T17:04:17.687Z","caller":"api/capability.go:75","msg":"enabled capabilities for version","cluster-version":"3.5"}
+{"level":"info","ts":"2024-10-02T17:04:17.687Z","caller":"etcdserver/server.go:2597","msg":"cluster version is updated","cluster-version":"3.5"}
+{"level":"info","ts":"2024-10-02T17:04:17.687Z","caller":"embed/serve.go:198","msg":"serving client traffic securely","address":"172.19.0.2:2379"}
+{"level":"info","ts":"2024-10-02T17:04:17.688Z","caller":"embed/serve.go:198","msg":"serving client traffic securely","address":"127.0.0.1:2379"}
+time="2024-10-02T17:04:17Z" level=info msg="Defragmenting etcd database"
+{"level":"info","ts":"2024-10-02T17:04:17.697Z","caller":"v3rpc/maintenance.go:90","msg":"starting defragment"}
+{"level":"info","ts":"2024-10-02T17:04:17.699Z","caller":"backend/backend.go:497","msg":"defragmenting","path":"/var/lib/rancher/k3s/server/db/etcd/member/snap/db","current-db-size-bytes":20480,"current-db-size":"20 kB","current-db-size-in-use-bytes":16384,"current-db-size-in-use":"16 kB"}
+{"level":"info","ts":"2024-10-02T17:04:17.701Z","caller":"backend/backend.go:549","msg":"finished defragmenting directory","path":"/var/lib/rancher/k3s/server/db/etcd/member/snap/db","current-db-size-bytes-diff":0,"current-db-size-bytes":20480,"current-db-size":"20 kB","current-db-size-in-use-bytes-diff":-4096,"current-db-size-in-use-bytes":12288,"current-db-size-in-use":"12 kB","took":"3.57348ms"}
+{"level":"info","ts":"2024-10-02T17:04:17.701Z","caller":"v3rpc/maintenance.go:96","msg":"finished defragment"}
+time="2024-10-02T17:04:17Z" level=info msg="etcd data store connection OK"
+time="2024-10-02T17:04:17Z" level=info msg="Saving cluster bootstrap data to datastore"
+time="2024-10-02T17:04:17Z" level=info msg="Waiting for API server to become available"
+W1002 17:04:17.708574      71 feature_gate.go:241] Setting GA feature gate JobTrackingWithFinalizers=true. It will be removed in a future release.
+I1002 17:04:17.709472      71 server.go:569] external host was not specified, using 172.19.0.2
+I1002 17:04:17.710722      71 server.go:171] Version: v1.26.4+k3s1
+I1002 17:04:17.710749      71 server.go:173] "Golang settings" GOGC="" GOMAXPROCS="" GOTRACEBACK=""
+time="2024-10-02T17:04:17Z" level=info msg="Reconciling etcd snapshot data in k3s-etcd-snapshots ConfigMap"
+I1002 17:04:18.426378      71 shared_informer.go:270] Waiting for caches to sync for node_authorizer
+I1002 17:04:18.428421      71 plugins.go:158] Loaded 12 mutating admission controller(s) successfully in the following order: NamespaceLifecycle,LimitRanger,ServiceAccount,NodeRestriction,TaintNodesByCondition,Priority,DefaultTolerationSeconds,DefaultStorageClass,StorageObjectInUseProtection,RuntimeClass,DefaultIngressClass,MutatingAdmissionWebhook.
+I1002 17:04:18.428443      71 plugins.go:161] Loaded 12 validating admission controller(s) successfully in the following order: LimitRanger,ServiceAccount,PodSecurity,Priority,PersistentVolumeClaimResize,RuntimeClass,CertificateApproval,CertificateSigning,CertificateSubjectRestriction,ValidatingAdmissionPolicy,ValidatingAdmissionWebhook,ResourceQuota.
+W1002 17:04:18.461829      71 genericapiserver.go:660] Skipping API apiextensions.k8s.io/v1beta1 because it has no resources.
+I1002 17:04:18.462556      71 instance.go:277] Using reconciler: lease
+I1002 17:04:18.646113      71 instance.go:621] API group "internal.apiserver.k8s.io" is not enabled, skipping.
+I1002 17:04:18.826751      71 instance.go:621] API group "resource.k8s.io" is not enabled, skipping.
+W1002 17:04:18.919741      71 genericapiserver.go:660] Skipping API authentication.k8s.io/v1beta1 because it has no resources.
+W1002 17:04:18.919758      71 genericapiserver.go:660] Skipping API authentication.k8s.io/v1alpha1 because it has no resources.
+W1002 17:04:18.922021      71 genericapiserver.go:660] Skipping API authorization.k8s.io/v1beta1 because it has no resources.
+W1002 17:04:18.925444      71 genericapiserver.go:660] Skipping API autoscaling/v2beta1 because it has no resources.
+W1002 17:04:18.925456      71 genericapiserver.go:660] Skipping API autoscaling/v2beta2 because it has no resources.
+W1002 17:04:18.927504      71 genericapiserver.go:660] Skipping API batch/v1beta1 because it has no resources.
+W1002 17:04:18.929094      71 genericapiserver.go:660] Skipping API certificates.k8s.io/v1beta1 because it has no resources.
+W1002 17:04:18.930826      71 genericapiserver.go:660] Skipping API coordination.k8s.io/v1beta1 because it has no resources.
+W1002 17:04:18.930860      71 genericapiserver.go:660] Skipping API discovery.k8s.io/v1beta1 because it has no resources.
+W1002 17:04:18.934854      71 genericapiserver.go:660] Skipping API networking.k8s.io/v1beta1 because it has no resources.
+W1002 17:04:18.934868      71 genericapiserver.go:660] Skipping API networking.k8s.io/v1alpha1 because it has no resources.
+W1002 17:04:18.936253      71 genericapiserver.go:660] Skipping API node.k8s.io/v1beta1 because it has no resources.
+W1002 17:04:18.936263      71 genericapiserver.go:660] Skipping API node.k8s.io/v1alpha1 because it has no resources.
+W1002 17:04:18.936294      71 genericapiserver.go:660] Skipping API policy/v1beta1 because it has no resources.
+W1002 17:04:18.940293      71 genericapiserver.go:660] Skipping API rbac.authorization.k8s.io/v1beta1 because it has no resources.
+W1002 17:04:18.940306      71 genericapiserver.go:660] Skipping API rbac.authorization.k8s.io/v1alpha1 because it has no resources.
+W1002 17:04:18.941608      71 genericapiserver.go:660] Skipping API scheduling.k8s.io/v1beta1 because it has no resources.
+W1002 17:04:18.941617      71 genericapiserver.go:660] Skipping API scheduling.k8s.io/v1alpha1 because it has no resources.
+W1002 17:04:18.945795      71 genericapiserver.go:660] Skipping API storage.k8s.io/v1alpha1 because it has no resources.
+W1002 17:04:18.951364      71 genericapiserver.go:660] Skipping API flowcontrol.apiserver.k8s.io/v1beta1 because it has no resources.
+W1002 17:04:18.951376      71 genericapiserver.go:660] Skipping API flowcontrol.apiserver.k8s.io/v1alpha1 because it has no resources.
+W1002 17:04:18.959131      71 genericapiserver.go:660] Skipping API apps/v1beta2 because it has no resources.
+W1002 17:04:18.959157      71 genericapiserver.go:660] Skipping API apps/v1beta1 because it has no resources.
+W1002 17:04:18.962942      71 genericapiserver.go:660] Skipping API admissionregistration.k8s.io/v1beta1 because it has no resources.
+W1002 17:04:18.962962      71 genericapiserver.go:660] Skipping API admissionregistration.k8s.io/v1alpha1 because it has no resources.
+W1002 17:04:18.965229      71 genericapiserver.go:660] Skipping API events.k8s.io/v1beta1 because it has no resources.
+W1002 17:04:18.988928      71 genericapiserver.go:660] Skipping API apiregistration.k8s.io/v1beta1 because it has no resources.
+time="2024-10-02T17:04:19Z" level=info msg="Tunnel server egress proxy waiting for runtime core to become available"
+I1002 17:04:19.694254      71 dynamic_cafile_content.go:157] "Starting controller" name="request-header::/var/lib/rancher/k3s/server/tls/request-header-ca.crt"
+I1002 17:04:19.694268      71 dynamic_cafile_content.go:157] "Starting controller" name="client-ca-bundle::/var/lib/rancher/k3s/server/tls/client-ca.crt"
+I1002 17:04:19.694414      71 dynamic_serving_content.go:132] "Starting controller" name="serving-cert::/var/lib/rancher/k3s/server/tls/serving-kube-apiserver.crt::/var/lib/rancher/k3s/server/tls/serving-kube-apiserver.key"
+I1002 17:04:19.694626      71 secure_serving.go:210] Serving securely on 127.0.0.1:6444
+I1002 17:04:19.694662      71 tlsconfig.go:240] "Starting DynamicServingCertificateController"
+I1002 17:04:19.694674      71 available_controller.go:494] Starting AvailableConditionController
+I1002 17:04:19.694682      71 cache.go:32] Waiting for caches to sync for AvailableConditionController controller
+I1002 17:04:19.694691      71 controller.go:80] Starting OpenAPI V3 AggregationController
+I1002 17:04:19.694671      71 apf_controller.go:361] Starting API Priority and Fairness config controller
+I1002 17:04:19.694708      71 dynamic_serving_content.go:132] "Starting controller" name="aggregator-proxy-cert::/var/lib/rancher/k3s/server/tls/client-auth-proxy.crt::/var/lib/rancher/k3s/server/tls/client-auth-proxy.key"
+I1002 17:04:19.694763      71 crdregistration_controller.go:111] Starting crd-autoregister controller
+I1002 17:04:19.694772      71 shared_informer.go:270] Waiting for caches to sync for crd-autoregister
+I1002 17:04:19.694684      71 autoregister_controller.go:141] Starting autoregister controller
+I1002 17:04:19.694825      71 cache.go:32] Waiting for caches to sync for autoregister controller
+I1002 17:04:19.694903      71 customresource_discovery_controller.go:288] Starting DiscoveryController
+I1002 17:04:19.694916      71 gc_controller.go:78] Starting apiserver lease garbage collector
+I1002 17:04:19.694945      71 controller.go:85] Starting OpenAPI controller
+I1002 17:04:19.694972      71 controller.go:85] Starting OpenAPI V3 controller
+I1002 17:04:19.694991      71 naming_controller.go:291] Starting NamingConditionController
+I1002 17:04:19.695024      71 establishing_controller.go:76] Starting EstablishingController
+I1002 17:04:19.695045      71 nonstructuralschema_controller.go:192] Starting NonStructuralSchemaConditionController
+I1002 17:04:19.695063      71 apiapproval_controller.go:186] Starting KubernetesAPIApprovalPolicyConformantConditionController
+I1002 17:04:19.695069      71 controller.go:83] Starting OpenAPI AggregationController
+I1002 17:04:19.695080      71 crd_finalizer.go:266] Starting CRDFinalizer
+I1002 17:04:19.695507      71 cluster_authentication_trust_controller.go:440] Starting cluster_authentication_trust_controller controller
+I1002 17:04:19.695516      71 shared_informer.go:270] Waiting for caches to sync for cluster_authentication_trust_controller
+I1002 17:04:19.695548      71 dynamic_cafile_content.go:157] "Starting controller" name="client-ca-bundle::/var/lib/rancher/k3s/server/tls/client-ca.crt"
+I1002 17:04:19.696084      71 dynamic_cafile_content.go:157] "Starting controller" name="request-header::/var/lib/rancher/k3s/server/tls/request-header-ca.crt"
+I1002 17:04:19.696190      71 apiservice_controller.go:97] Starting APIServiceRegistrationController
+I1002 17:04:19.696202      71 cache.go:32] Waiting for caches to sync for APIServiceRegistrationController controller
+I1002 17:04:19.695068      71 controller.go:121] Starting legacy_token_tracking_controller
+I1002 17:04:19.696354      71 shared_informer.go:270] Waiting for caches to sync for configmaps
+I1002 17:04:19.719566      71 controller.go:615] quota admission added evaluator for: namespaces
+I1002 17:04:19.726433      71 shared_informer.go:277] Caches are synced for node_authorizer
+E1002 17:04:19.727736      71 controller.go:156] Unable to perform initial Kubernetes service initialization: Service "kubernetes" is invalid: spec.clusterIPs: Invalid value: []string{"10.43.0.1"}: failed to allocate IP 10.43.0.1: cannot allocate resources of type serviceipallocations at this time
+I1002 17:04:19.768228      71 controller.go:615] quota admission added evaluator for: leases.coordination.k8s.io
+I1002 17:04:19.794832      71 cache.go:39] Caches are synced for AvailableConditionController controller
+I1002 17:04:19.794846      71 cache.go:39] Caches are synced for autoregister controller
+I1002 17:04:19.794836      71 shared_informer.go:277] Caches are synced for crd-autoregister
+I1002 17:04:19.794891      71 apf_controller.go:366] Running API Priority and Fairness config worker
+I1002 17:04:19.794904      71 apf_controller.go:369] Running API Priority and Fairness periodic rebalancing process
+I1002 17:04:19.795562      71 shared_informer.go:277] Caches are synced for cluster_authentication_trust_controller
+I1002 17:04:19.796228      71 cache.go:39] Caches are synced for APIServiceRegistrationController controller
+I1002 17:04:19.796991      71 shared_informer.go:277] Caches are synced for configmaps
+I1002 17:04:20.402274      71 controller.go:132] OpenAPI AggregationController: action for item k8s_internal_local_delegation_chain_0000000000: Nothing (removed from the queue).
+I1002 17:04:20.700118      71 storage_scheduling.go:95] created PriorityClass system-node-critical with value 2000001000
+I1002 17:04:20.704883      71 storage_scheduling.go:95] created PriorityClass system-cluster-critical with value 2000000000
+I1002 17:04:20.704908      71 storage_scheduling.go:111] all system priority classes are created successfully or already exist.
+time="2024-10-02T17:04:20Z" level=info msg="Waiting to retrieve kube-proxy configuration; server is not ready: https://127.0.0.1:6443/v1-k3s/readyz: 500 Internal Server Error"
+I1002 17:04:21.096133      71 controller.go:615] quota admission added evaluator for: roles.rbac.authorization.k8s.io
+I1002 17:04:21.126425      71 controller.go:615] quota admission added evaluator for: rolebindings.rbac.authorization.k8s.io
+I1002 17:04:21.237443      71 alloc.go:327] "allocated clusterIPs" service="default/kubernetes" clusterIPs=map[IPv4:10.43.0.1]
+W1002 17:04:21.242877      71 lease.go:251] Resetting endpoints for master service "kubernetes" to [172.19.0.2]
+I1002 17:04:21.243574      71 controller.go:615] quota admission added evaluator for: endpoints
+I1002 17:04:21.248484      71 controller.go:615] quota admission added evaluator for: endpointslices.discovery.k8s.io
+time="2024-10-02T17:04:21Z" level=info msg="Waiting for cloud-controller-manager privileges to become available"
+time="2024-10-02T17:04:21Z" level=info msg="Kube API server is now running"
+time="2024-10-02T17:04:21Z" level=info msg="ETCD server is now running"
+time="2024-10-02T17:04:21Z" level=info msg="k3s is up and running"
+W1002 17:04:21.718743      71 feature_gate.go:241] Setting GA feature gate JobTrackingWithFinalizers=true. It will be removed in a future release.
+time="2024-10-02T17:04:21Z" level=info msg="Applying CRD addons.k3s.cattle.io"
+time="2024-10-02T17:04:21Z" level=info msg="Applying CRD helmcharts.helm.cattle.io"
+time="2024-10-02T17:04:21Z" level=info msg="Applying CRD helmchartconfigs.helm.cattle.io"
+Flag --cloud-provider has been deprecated, will be removed in 1.25 or later, in favor of removing cloud provider code from Kubelet.
+Flag --containerd has been deprecated, This is a cadvisor flag that was mistakenly registered with the Kubelet. Due to legacy concerns, it will follow the standard CLI deprecation timeline before being removed.
+Flag --pod-infra-container-image has been deprecated, will be removed in 1.27. Image garbage collector will get sandbox image information from CRI.
+I1002 17:04:21.755628      71 server.go:197] "--pod-infra-container-image will not be pruned by the image garbage collector in kubelet and should also be set in the remote runtime"
+I1002 17:04:21.761621      71 server.go:407] "Kubelet version" kubeletVersion="v1.26.4+k3s1"
+I1002 17:04:21.761643      71 server.go:409] "Golang settings" GOGC="" GOMAXPROCS="" GOTRACEBACK=""
+I1002 17:04:21.763207      71 dynamic_cafile_content.go:157] "Starting controller" name="client-ca-bundle::/var/lib/rancher/k3s/agent/client-ca.crt"
+time="2024-10-02T17:04:21Z" level=info msg="Waiting for CRD helmchartconfigs.helm.cattle.io to become available"
+W1002 17:04:21.771446      71 info.go:53] Couldn't collect info from any of the files in "/etc/machine-id,/var/lib/dbus/machine-id"
+I1002 17:04:21.771751      71 server.go:654] "--cgroups-per-qos enabled, but --cgroup-root was not specified.  defaulting to /"
+I1002 17:04:21.771990      71 container_manager_linux.go:267] "Container manager verified user specified cgroup-root exists" cgroupRoot=[]
+I1002 17:04:21.772047      71 container_manager_linux.go:272] "Creating Container Manager object based on Node Config" nodeConfig={RuntimeCgroupsName:/k3s SystemCgroupsName: KubeletCgroupsName:/k3s KubeletOOMScoreAdj:-999 ContainerRuntime: CgroupsPerQOS:true CgroupRoot:/ CgroupDriver:cgroupfs KubeletRootDir:/var/lib/kubelet ProtectKernelDefaults:false NodeAllocatableConfig:{KubeReservedCgroupName: SystemReservedCgroupName: ReservedSystemCPUs: EnforceNodeAllocatable:map[pods:{}] KubeReserved:map[] SystemReserved:map[] HardEvictionThresholds:[{Signal:nodefs.available Operator:LessThan Value:{Quantity:<nil> Percentage:0.05} GracePeriod:0s MinReclaim:<nil>} {Signal:imagefs.available Operator:LessThan Value:{Quantity:<nil> Percentage:0.05} GracePeriod:0s MinReclaim:<nil>}]} QOSReserved:map[] CPUManagerPolicy:none CPUManagerPolicyOptions:map[] ExperimentalTopologyManagerScope:container CPUManagerReconcilePeriod:10s ExperimentalMemoryManagerPolicy:None ExperimentalMemoryManagerReservedMemory:[] ExperimentalPodPidsLimit:-1 EnforceCPULimits:true CPUCFSQuotaPeriod:100ms ExperimentalTopologyManagerPolicy:none ExperimentalTopologyManagerPolicyOptions:map[]}
+I1002 17:04:21.772072      71 topology_manager.go:134] "Creating topology manager with policy per scope" topologyPolicyName="none" topologyScopeName="container"
+I1002 17:04:21.772085      71 container_manager_linux.go:308] "Creating device plugin manager"
+I1002 17:04:21.772199      71 state_mem.go:36] "Initialized new in-memory state store"
+I1002 17:04:21.773401      71 kubelet.go:398] "Attempting to sync node with API server"
+I1002 17:04:21.773417      71 kubelet.go:286] "Adding static pod path" path="/var/lib/rancher/k3s/agent/pod-manifests"
+I1002 17:04:21.773440      71 kubelet.go:297] "Adding apiserver pod source"
+I1002 17:04:21.773456      71 apiserver.go:42] "Waiting for node sync before watching apiserver pods"
+I1002 17:04:21.774994      71 kuberuntime_manager.go:244] "Container runtime initialized" containerRuntime="containerd" version="v1.6.19-k3s1" apiVersion="v1"
+W1002 17:04:21.775300      71 probe.go:268] Flexvolume plugin directory at /usr/libexec/kubernetes/kubelet-plugins/volume/exec/ does not exist. Recreating.
+I1002 17:04:21.776033      71 server.go:1181] "Started kubelet"
+I1002 17:04:21.776088      71 server.go:161] "Starting to listen" address="0.0.0.0" port=10250
+E1002 17:04:21.776522      71 cri_stats_provider.go:455] "Failed to get the info of the filesystem with mountpoint" err="unable to find data in memory cache" mountpoint="/var/lib/rancher/k3s/agent/containerd/io.containerd.snapshotter.v1.overlayfs"
+E1002 17:04:21.776546      71 kubelet.go:1386] "Image garbage collection failed once. Stats initialization may not have completed yet" err="invalid capacity 0 on image filesystem"
+I1002 17:04:21.776957      71 server.go:451] "Adding debug handlers to kubelet server"
+I1002 17:04:21.777046      71 fs_resource_analyzer.go:67] "Starting FS ResourceAnalyzer"
+I1002 17:04:21.777147      71 volume_manager.go:293] "Starting Kubelet Volume Manager"
+I1002 17:04:21.777182      71 desired_state_of_world_populator.go:151] "Desired state populator starts to run"
+E1002 17:04:21.780987      71 nodelease.go:49] "Failed to get node when trying to set owner ref to the node lease" err="nodes \"local-node\" not found" node="local-node"
+I1002 17:04:21.796727      71 kubelet_network_linux.go:63] "Initialized iptables rules." protocol=IPv4
+I1002 17:04:21.809368      71 kubelet_network_linux.go:63] "Initialized iptables rules." protocol=IPv6
+I1002 17:04:21.809384      71 status_manager.go:176] "Starting to sync pod status with apiserver"
+I1002 17:04:21.809399      71 kubelet.go:2113] "Starting kubelet main sync loop"
+E1002 17:04:21.809465      71 kubelet.go:2137] "Skipping pod synchronization" err="[container runtime status check may not have completed yet, PLEG is not healthy: pleg has yet to be successful]"
+I1002 17:04:21.811493      71 cpu_manager.go:214] "Starting CPU manager" policy="none"
+I1002 17:04:21.811506      71 cpu_manager.go:215] "Reconciling" reconcilePeriod="10s"
+I1002 17:04:21.811522      71 state_mem.go:36] "Initialized new in-memory state store"
+I1002 17:04:21.812737      71 policy_none.go:49] "None policy: Start"
+I1002 17:04:21.813078      71 memory_manager.go:169] "Starting memorymanager" policy="None"
+I1002 17:04:21.813097      71 state_mem.go:35] "Initializing new in-memory state store"
+I1002 17:04:21.815286      71 manager.go:455] "Failed to read data from checkpoint" checkpoint="kubelet_internal_checkpoint" err="checkpoint is not found"
+I1002 17:04:21.815459      71 plugin_manager.go:118] "Starting Kubelet Plugin Manager"
+E1002 17:04:21.815749      71 eviction_manager.go:261] "Eviction manager: failed to get summary stats" err="failed to get node info: node \"local-node\" not found"
+I1002 17:04:21.954494      71 kubelet_node_status.go:70] "Attempting to register node" node="local-node"
+I1002 17:04:22.020621      71 serving.go:355] Generated self-signed cert in-memory
+I1002 17:04:22.177506      71 kubelet_node_status.go:73] "Successfully registered node" node="local-node"
+time="2024-10-02T17:04:22Z" level=info msg="Annotations and labels have been set successfully on node: local-node"
+time="2024-10-02T17:04:22Z" level=info msg="Starting flannel with backend vxlan"
+time="2024-10-02T17:04:22Z" level=info msg="Done waiting for CRD helmchartconfigs.helm.cattle.io to become available"
+time="2024-10-02T17:04:22Z" level=info msg="Writing static file: /var/lib/rancher/k3s/server/static/charts/traefik-20.3.1+up20.3.0.tgz"
+time="2024-10-02T17:04:22Z" level=info msg="Writing static file: /var/lib/rancher/k3s/server/static/charts/traefik-crd-20.3.1+up20.3.0.tgz"
+time="2024-10-02T17:04:22Z" level=info msg="Writing manifest: /var/lib/rancher/k3s/server/manifests/ccm.yaml"
+time="2024-10-02T17:04:22Z" level=info msg="Writing manifest: /var/lib/rancher/k3s/server/manifests/rolebindings.yaml"
+time="2024-10-02T17:04:22Z" level=info msg="Writing manifest: /var/lib/rancher/k3s/server/manifests/coredns.yaml"
+time="2024-10-02T17:04:22Z" level=info msg="Starting managed etcd node metadata controller"
+time="2024-10-02T17:04:22Z" level=info msg="Reconciliation of snapshot data in k3s-etcd-snapshots ConfigMap complete"
+time="2024-10-02T17:04:22Z" level=error msg="Failed to record snapshots for cluster: No snapshot configmap found"
+time="2024-10-02T17:04:22Z" level=info msg="Starting k3s.cattle.io/v1, Kind=Addon controller"
+time="2024-10-02T17:04:22Z" level=info msg="Creating deploy event broadcaster"
+time="2024-10-02T17:04:22Z" level=info msg="Starting /v1, Kind=Node controller"
+I1002 17:04:22.490142      71 leaderelection.go:248] attempting to acquire leader lease kube-system/k3s...
+I1002 17:04:22.490178      71 leaderelection.go:248] attempting to acquire leader lease kube-system/k3s-etcd...
+time="2024-10-02T17:04:22Z" level=info msg="Cluster dns configmap has been set successfully"
+I1002 17:04:22.497894      71 leaderelection.go:258] successfully acquired lease kube-system/k3s-etcd
+time="2024-10-02T17:04:22Z" level=info msg="Starting managed etcd apiserver addresses controller"
+time="2024-10-02T17:04:22Z" level=info msg="Starting managed etcd member removal controller"
+I1002 17:04:22.500827      71 leaderelection.go:258] successfully acquired lease kube-system/k3s
+time="2024-10-02T17:04:22Z" level=info msg="Creating helm-controller event broadcaster"
+time="2024-10-02T17:04:22Z" level=info msg="Labels and annotations have been set successfully on node: local-node"
+I1002 17:04:22.675500      71 controllermanager.go:182] Version: v1.26.4+k3s1
+I1002 17:04:22.675527      71 controllermanager.go:184] "Golang settings" GOGC="" GOMAXPROCS="" GOTRACEBACK=""
+I1002 17:04:22.679020      71 requestheader_controller.go:169] Starting RequestHeaderAuthRequestController
+I1002 17:04:22.679033      71 configmap_cafile_content.go:202] "Starting controller" name="client-ca::kube-system::extension-apiserver-authentication::client-ca-file"
+I1002 17:04:22.679043      71 shared_informer.go:270] Waiting for caches to sync for RequestHeaderAuthRequestController
+I1002 17:04:22.679048      71 configmap_cafile_content.go:202] "Starting controller" name="client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file"
+I1002 17:04:22.679056      71 shared_informer.go:270] Waiting for caches to sync for client-ca::kube-system::extension-apiserver-authentication::client-ca-file
+I1002 17:04:22.679059      71 shared_informer.go:270] Waiting for caches to sync for client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file
+I1002 17:04:22.679446      71 secure_serving.go:210] Serving securely on 127.0.0.1:10257
+I1002 17:04:22.679516      71 tlsconfig.go:240] "Starting DynamicServingCertificateController"
+I1002 17:04:22.679881      71 leaderelection.go:248] attempting to acquire leader lease kube-system/kube-controller-manager...
+I1002 17:04:22.688297      71 leaderelection.go:258] successfully acquired lease kube-system/kube-controller-manager
+I1002 17:04:22.688384      71 event.go:294] "Event occurred" object="kube-system/kube-controller-manager" fieldPath="" kind="Lease" apiVersion="coordination.k8s.io/v1" type="Normal" reason="LeaderElection" message="0de4c2c3467e_bb99ba44-8fe2-425b-906e-6e7fe745b718 became leader"
+I1002 17:04:22.698777      71 shared_informer.go:270] Waiting for caches to sync for tokens
+I1002 17:04:22.705420      71 controller.go:615] quota admission added evaluator for: serviceaccounts
+I1002 17:04:22.707341      71 controllermanager.go:622] Started "endpointslicemirroring"
+I1002 17:04:22.707469      71 endpointslicemirroring_controller.go:211] Starting EndpointSliceMirroring controller
+I1002 17:04:22.707491      71 shared_informer.go:270] Waiting for caches to sync for endpoint_slice_mirroring
+time="2024-10-02T17:04:22Z" level=info msg="Starting helm.cattle.io/v1, Kind=HelmChartConfig controller"
+time="2024-10-02T17:04:22Z" level=info msg="Starting helm.cattle.io/v1, Kind=HelmChart controller"
+I1002 17:04:22.713176      71 controllermanager.go:622] Started "serviceaccount"
+I1002 17:04:22.713291      71 serviceaccounts_controller.go:111] Starting service account controller
+I1002 17:04:22.713299      71 shared_informer.go:270] Waiting for caches to sync for service account
+time="2024-10-02T17:04:22Z" level=info msg="Starting rbac.authorization.k8s.io/v1, Kind=ClusterRoleBinding controller"
+I1002 17:04:22.720409      71 controllermanager.go:622] Started "job"
+I1002 17:04:22.720764      71 job_controller.go:191] Starting job controller
+I1002 17:04:22.720786      71 shared_informer.go:270] Waiting for caches to sync for job
+time="2024-10-02T17:04:22Z" level=info msg="Starting batch/v1, Kind=Job controller"
+I1002 17:04:22.727409      71 controllermanager.go:622] Started "statefulset"
+I1002 17:04:22.727557      71 stateful_set.go:152] Starting stateful set controller
+I1002 17:04:22.727568      71 shared_informer.go:270] Waiting for caches to sync for stateful set
+I1002 17:04:22.773995      71 apiserver.go:52] "Watching apiserver"
+I1002 17:04:22.779836      71 shared_informer.go:277] Caches are synced for client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file
+I1002 17:04:22.779893      71 shared_informer.go:277] Caches are synced for client-ca::kube-system::extension-apiserver-authentication::client-ca-file
+I1002 17:04:22.779931      71 shared_informer.go:277] Caches are synced for RequestHeaderAuthRequestController
+I1002 17:04:22.799574      71 shared_informer.go:277] Caches are synced for tokens
+time="2024-10-02T17:04:22Z" level=warning msg="Unable to fetch coredns config map: configmaps \"coredns\" not found"
+I1002 17:04:23.106967      71 kubelet_node_status.go:493] "Fast updating node status as it just became ready"
+I1002 17:04:23.177861      71 desired_state_of_world_populator.go:159] "Finished populating initial desired state of world"
+I1002 17:04:23.183216      71 reconciler.go:41] "Reconciler: start to sync state"
+time="2024-10-02T17:04:23Z" level=info msg="Starting /v1, Kind=ConfigMap controller"
+time="2024-10-02T17:04:23Z" level=info msg="Starting /v1, Kind=ServiceAccount controller"
+time="2024-10-02T17:04:23Z" level=info msg="Starting /v1, Kind=Secret controller"
+time="2024-10-02T17:04:23Z" level=warning msg="Unable to fetch coredns config map: configmaps \"coredns\" not found"
+time="2024-10-02T17:04:24Z" level=info msg="Updating TLS secret for kube-system/k3s-serving (count: 10): map[listener.cattle.io/cn-10.43.0.1:10.43.0.1 listener.cattle.io/cn-127.0.0.1:127.0.0.1 listener.cattle.io/cn-172.19.0.2:172.19.0.2 listener.cattle.io/cn-__1-f16284:::1 listener.cattle.io/cn-kubernetes:kubernetes listener.cattle.io/cn-kubernetes.default:kubernetes.default listener.cattle.io/cn-kubernetes.default.svc:kubernetes.default.svc listener.cattle.io/cn-kubernetes.default.svc.cluster.local:kubernetes.default.svc.cluster.local listener.cattle.io/cn-local-node:local-node listener.cattle.io/cn-localhost:localhost listener.cattle.io/fingerprint:SHA1=487840810904B676D67C3B418CE8D6688D47E932]"
+I1002 17:04:24.246001      71 alloc.go:327] "allocated clusterIPs" service="cattle-system/rancher" clusterIPs=map[IPv4:10.43.62.16]
+time="2024-10-02T17:04:24Z" level=warning msg="Unable to fetch coredns config map: configmaps \"coredns\" not found"
+I1002 17:04:24.383815      71 controller.go:615] quota admission added evaluator for: addons.k3s.cattle.io
+I1002 17:04:24.389646      71 event.go:294] "Event occurred" object="kube-system/ccm" fieldPath="" kind="Addon" apiVersion="k3s.cattle.io/v1" type="Normal" reason="ApplyingManifest" message="Applying manifest at \"/var/lib/rancher/k3s/server/manifests/ccm.yaml\""
+I1002 17:04:24.418260      71 event.go:294] "Event occurred" object="kube-system/ccm" fieldPath="" kind="Addon" apiVersion="k3s.cattle.io/v1" type="Normal" reason="AppliedManifest" message="Applied manifest at \"/var/lib/rancher/k3s/server/manifests/ccm.yaml\""
+I1002 17:04:24.434085      71 event.go:294] "Event occurred" object="kube-system/coredns" fieldPath="" kind="Addon" apiVersion="k3s.cattle.io/v1" type="Normal" reason="ApplyingManifest" message="Applying manifest at \"/var/lib/rancher/k3s/server/manifests/coredns.yaml\""
+I1002 17:04:24.478790      71 controller.go:615] quota admission added evaluator for: deployments.apps
+time="2024-10-02T17:04:24Z" level=info msg="Active TLS secret kube-system/k3s-serving (ver=236) (count 10): map[listener.cattle.io/cn-10.43.0.1:10.43.0.1 listener.cattle.io/cn-127.0.0.1:127.0.0.1 listener.cattle.io/cn-172.19.0.2:172.19.0.2 listener.cattle.io/cn-__1-f16284:::1 listener.cattle.io/cn-kubernetes:kubernetes listener.cattle.io/cn-kubernetes.default:kubernetes.default listener.cattle.io/cn-kubernetes.default.svc:kubernetes.default.svc listener.cattle.io/cn-kubernetes.default.svc.cluster.local:kubernetes.default.svc.cluster.local listener.cattle.io/cn-local-node:local-node listener.cattle.io/cn-localhost:localhost listener.cattle.io/fingerprint:SHA1=487840810904B676D67C3B418CE8D6688D47E932]"
+I1002 17:04:24.493520      71 alloc.go:327] "allocated clusterIPs" service="kube-system/kube-dns" clusterIPs=map[IPv4:10.43.0.10]
+I1002 17:04:24.494499      71 event.go:294] "Event occurred" object="kube-system/coredns" fieldPath="" kind="Addon" apiVersion="k3s.cattle.io/v1" type="Normal" reason="AppliedManifest" message="Applied manifest at \"/var/lib/rancher/k3s/server/manifests/coredns.yaml\""
+I1002 17:04:24.504112      71 event.go:294] "Event occurred" object="kube-system/rolebindings" fieldPath="" kind="Addon" apiVersion="k3s.cattle.io/v1" type="Normal" reason="ApplyingManifest" message="Applying manifest at \"/var/lib/rancher/k3s/server/manifests/rolebindings.yaml\""
+I1002 17:04:24.535220      71 event.go:294] "Event occurred" object="kube-system/rolebindings" fieldPath="" kind="Addon" apiVersion="k3s.cattle.io/v1" type="Normal" reason="AppliedManifest" message="Applied manifest at \"/var/lib/rancher/k3s/server/manifests/rolebindings.yaml\""
+time="2024-10-02T17:04:24Z" level=info msg="Tunnel authorizer set Kubelet Port 10250"
+time="2024-10-02T17:04:24Z" level=info msg="Updated coredns node hosts entry [172.19.0.2 local-node]"
+I1002 17:04:25.150100      71 serving.go:355] Generated self-signed cert in-memory
+I1002 17:04:25.503064      71 controllermanager.go:152] Version: v1.26.4+k3s1
+I1002 17:04:25.505385      71 requestheader_controller.go:169] Starting RequestHeaderAuthRequestController
+I1002 17:04:25.505397      71 configmap_cafile_content.go:202] "Starting controller" name="client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file"
+I1002 17:04:25.505402      71 shared_informer.go:270] Waiting for caches to sync for RequestHeaderAuthRequestController
+I1002 17:04:25.505405      71 shared_informer.go:270] Waiting for caches to sync for client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file
+I1002 17:04:25.505388      71 configmap_cafile_content.go:202] "Starting controller" name="client-ca::kube-system::extension-apiserver-authentication::client-ca-file"
+I1002 17:04:25.505419      71 shared_informer.go:270] Waiting for caches to sync for client-ca::kube-system::extension-apiserver-authentication::client-ca-file
+I1002 17:04:25.505880      71 secure_serving.go:210] Serving securely on 127.0.0.1:10258
+I1002 17:04:25.505964      71 tlsconfig.go:240] "Starting DynamicServingCertificateController"
+I1002 17:04:25.506264      71 leaderelection.go:248] attempting to acquire leader lease kube-system/k3s-cloud-controller-manager...
+I1002 17:04:25.516371      71 leaderelection.go:258] successfully acquired lease kube-system/k3s-cloud-controller-manager
+I1002 17:04:25.516483      71 event.go:294] "Event occurred" object="kube-system/k3s-cloud-controller-manager" fieldPath="" kind="Lease" apiVersion="coordination.k8s.io/v1" type="Normal" reason="LeaderElection" message="0de4c2c3467e_a829a097-7de5-4d6d-8d70-4a9548404634 became leader"
+I1002 17:04:25.527419      71 controllermanager.go:311] Started "cloud-node-lifecycle"
+W1002 17:04:25.527433      71 controllermanager.go:288] "service" is disabled
+W1002 17:04:25.527437      71 controllermanager.go:288] "route" is disabled
+I1002 17:04:25.527468      71 node_lifecycle_controller.go:113] Sending events to api server
+I1002 17:04:25.527608      71 controllermanager.go:311] Started "cloud-node"
+I1002 17:04:25.527697      71 node_controller.go:157] Sending events to api server.
+I1002 17:04:25.527753      71 node_controller.go:166] Waiting for informer caches to sync
+I1002 17:04:25.605876      71 shared_informer.go:277] Caches are synced for client-ca::kube-system::extension-apiserver-authentication::client-ca-file
+I1002 17:04:25.605884      71 shared_informer.go:277] Caches are synced for RequestHeaderAuthRequestController
+I1002 17:04:25.605910      71 shared_informer.go:277] Caches are synced for client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file
+I1002 17:04:25.628471      71 node_controller.go:415] Initializing node local-node with cloud provider
+I1002 17:04:25.635930      71 node_controller.go:484] Successfully initialized node local-node with cloud provider
+I1002 17:04:25.635972      71 event.go:294] "Event occurred" object="local-node" fieldPath="" kind="Node" apiVersion="v1" type="Normal" reason="Synced" message="Node synced successfully"
+time="2024-10-02T17:04:25Z" level=info msg="Running kube-proxy --cluster-cidr=10.42.0.0/16 --conntrack-max-per-core=0 --conntrack-tcp-timeout-close-wait=0s --conntrack-tcp-timeout-established=0s --healthz-bind-address=127.0.0.1 --hostname-override=local-node --kubeconfig=/var/lib/rancher/k3s/agent/kubeproxy.kubeconfig --proxy-mode=iptables"
+I1002 17:04:25.761449      71 server.go:224] "Warning, all flags other than --config, --write-config-to, and --cleanup are deprecated, please begin using a config file ASAP"
+I1002 17:04:25.766442      71 node.go:163] Successfully retrieved node IP: 172.19.0.2
+I1002 17:04:25.766473      71 server_others.go:109] "Detected node IP" address="172.19.0.2"
+I1002 17:04:25.769445      71 server_others.go:176] "Using iptables Proxier"
+I1002 17:04:25.769476      71 server_others.go:183] "kube-proxy running in dual-stack mode" ipFamily=IPv4
+I1002 17:04:25.769494      71 server_others.go:184] "Creating dualStackProxier for iptables"
+I1002 17:04:25.769523      71 server_others.go:465] "Detect-local-mode set to ClusterCIDR, but no IPv6 cluster CIDR defined, , defaulting to no-op detect-local for IPv6"
+I1002 17:04:25.769548      71 proxier.go:242] "Setting route_localnet=1 to allow node-ports on localhost; to change this either disable iptables.localhostNodePorts (--iptables-localhost-nodeports) or set nodePortAddresses (--nodeport-addresses) to filter loopback addresses"
+I1002 17:04:25.770095      71 server.go:655] "Version info" version="v1.26.4+k3s1"
+I1002 17:04:25.770116      71 server.go:657] "Golang settings" GOGC="" GOMAXPROCS="" GOTRACEBACK=""
+I1002 17:04:25.770828      71 config.go:444] "Starting node config controller"
+I1002 17:04:25.770853      71 shared_informer.go:270] Waiting for caches to sync for node config
+I1002 17:04:25.770859      71 config.go:317] "Starting service config controller"
+I1002 17:04:25.770858      71 config.go:226] "Starting endpoint slice config controller"
+I1002 17:04:25.770881      71 shared_informer.go:270] Waiting for caches to sync for endpoint slice config
+I1002 17:04:25.770870      71 shared_informer.go:270] Waiting for caches to sync for service config
+time="2024-10-02T17:04:25Z" level=info msg="Stopped tunnel to 127.0.0.1:6443"
+time="2024-10-02T17:04:25Z" level=info msg="Proxy done" err="context canceled" url="wss://127.0.0.1:6443/v1-k3s/connect"
+time="2024-10-02T17:04:25Z" level=info msg="Connecting to proxy" url="wss://172.19.0.2:6443/v1-k3s/connect"
+time="2024-10-02T17:04:25Z" level=info msg="error in remotedialer server [400]: websocket: close 1006 (abnormal closure): unexpected EOF"
+time="2024-10-02T17:04:25Z" level=info msg="Handling backend connection request [local-node]"
+I1002 17:04:25.871032      71 shared_informer.go:277] Caches are synced for node config
+I1002 17:04:25.871054      71 shared_informer.go:277] Caches are synced for service config
+I1002 17:04:25.871094      71 shared_informer.go:277] Caches are synced for endpoint slice config
+I1002 17:04:26.637875      71 serving.go:355] Generated self-signed cert in-memory
+I1002 17:04:27.446831      71 server.go:152] "Starting Kubernetes Scheduler" version="v1.26.4+k3s1"
+I1002 17:04:27.446850      71 server.go:154] "Golang settings" GOGC="" GOMAXPROCS="" GOTRACEBACK=""
+I1002 17:04:27.448977      71 configmap_cafile_content.go:202] "Starting controller" name="client-ca::kube-system::extension-apiserver-authentication::client-ca-file"
+I1002 17:04:27.448984      71 requestheader_controller.go:169] Starting RequestHeaderAuthRequestController
+I1002 17:04:27.448993      71 shared_informer.go:270] Waiting for caches to sync for client-ca::kube-system::extension-apiserver-authentication::client-ca-file
+I1002 17:04:27.449010      71 shared_informer.go:270] Waiting for caches to sync for RequestHeaderAuthRequestController
+I1002 17:04:27.448983      71 configmap_cafile_content.go:202] "Starting controller" name="client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file"
+I1002 17:04:27.449042      71 shared_informer.go:270] Waiting for caches to sync for client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file
+I1002 17:04:27.449087      71 secure_serving.go:210] Serving securely on 127.0.0.1:10259
+I1002 17:04:27.449186      71 tlsconfig.go:240] "Starting DynamicServingCertificateController"
+I1002 17:04:27.549112      71 shared_informer.go:277] Caches are synced for client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file
+I1002 17:04:27.549145      71 shared_informer.go:277] Caches are synced for client-ca::kube-system::extension-apiserver-authentication::client-ca-file
+I1002 17:04:27.549186      71 shared_informer.go:277] Caches are synced for RequestHeaderAuthRequestController
+I1002 17:04:27.549269      71 leaderelection.go:248] attempting to acquire leader lease kube-system/kube-scheduler...
+I1002 17:04:27.555874      71 leaderelection.go:258] successfully acquired lease kube-system/kube-scheduler
+I1002 17:04:32.752556      71 range_allocator.go:109] No Secondary Service CIDR provided. Skipping filtering out secondary service addresses.
+I1002 17:04:32.752605      71 controllermanager.go:622] Started "nodeipam"
+I1002 17:04:32.752772      71 node_ipam_controller.go:155] Starting ipam controller
+I1002 17:04:32.752794      71 shared_informer.go:270] Waiting for caches to sync for node
+I1002 17:04:32.761757      71 controllermanager.go:622] Started "endpointslice"
+I1002 17:04:32.761921      71 endpointslice_controller.go:257] Starting endpoint slice controller
+I1002 17:04:32.761939      71 shared_informer.go:270] Waiting for caches to sync for endpoint_slice
+I1002 17:04:32.770592      71 controllermanager.go:622] Started "cronjob"
+I1002 17:04:32.770774      71 cronjob_controllerv2.go:137] "Starting cronjob controller v2"
+I1002 17:04:32.770803      71 shared_informer.go:270] Waiting for caches to sync for cronjob
+I1002 17:04:32.777176      71 controllermanager.go:622] Started "tokencleaner"
+I1002 17:04:32.777213      71 tokencleaner.go:111] Starting token cleaner controller
+I1002 17:04:32.777232      71 shared_informer.go:270] Waiting for caches to sync for token_cleaner
+I1002 17:04:32.777260      71 shared_informer.go:277] Caches are synced for token_cleaner
+I1002 17:04:32.784121      71 controllermanager.go:622] Started "ttl-after-finished"
+I1002 17:04:32.784221      71 ttlafterfinished_controller.go:104] Starting TTL after finished controller
+I1002 17:04:32.784231      71 shared_informer.go:270] Waiting for caches to sync for TTL after finished
+I1002 17:04:32.797338      71 garbagecollector.go:154] Starting garbage collector controller
+I1002 17:04:32.797365      71 shared_informer.go:270] Waiting for caches to sync for garbage collector
+I1002 17:04:32.797394      71 graph_builder.go:291] GraphBuilder running
+I1002 17:04:32.797444      71 controllermanager.go:622] Started "garbagecollector"
+I1002 17:04:32.826416      71 controllermanager.go:622] Started "namespace"
+I1002 17:04:32.826476      71 namespace_controller.go:195] Starting namespace controller
+I1002 17:04:32.826494      71 shared_informer.go:270] Waiting for caches to sync for namespace
+I1002 17:04:32.835173      71 certificate_controller.go:112] Starting certificate controller "csrsigning-kubelet-serving"
+I1002 17:04:32.835198      71 shared_informer.go:270] Waiting for caches to sync for certificate-csrsigning-kubelet-serving
+I1002 17:04:32.835224      71 dynamic_serving_content.go:132] "Starting controller" name="csr-controller::/var/lib/rancher/k3s/server/tls/server-ca.nochain.crt::/var/lib/rancher/k3s/server/tls/server-ca.key"
+I1002 17:04:32.835479      71 certificate_controller.go:112] Starting certificate controller "csrsigning-kubelet-client"
+I1002 17:04:32.835499      71 shared_informer.go:270] Waiting for caches to sync for certificate-csrsigning-kubelet-client
+I1002 17:04:32.835524      71 dynamic_serving_content.go:132] "Starting controller" name="csr-controller::/var/lib/rancher/k3s/server/tls/client-ca.nochain.crt::/var/lib/rancher/k3s/server/tls/client-ca.key"
+I1002 17:04:32.835773      71 certificate_controller.go:112] Starting certificate controller "csrsigning-kube-apiserver-client"
+I1002 17:04:32.835788      71 shared_informer.go:270] Waiting for caches to sync for certificate-csrsigning-kube-apiserver-client
+I1002 17:04:32.835820      71 dynamic_serving_content.go:132] "Starting controller" name="csr-controller::/var/lib/rancher/k3s/server/tls/client-ca.nochain.crt::/var/lib/rancher/k3s/server/tls/client-ca.key"
+I1002 17:04:32.836076      71 controllermanager.go:622] Started "csrsigning"
+I1002 17:04:32.836180      71 certificate_controller.go:112] Starting certificate controller "csrsigning-legacy-unknown"
+I1002 17:04:32.836191      71 shared_informer.go:270] Waiting for caches to sync for certificate-csrsigning-legacy-unknown
+I1002 17:04:32.836206      71 dynamic_serving_content.go:132] "Starting controller" name="csr-controller::/var/lib/rancher/k3s/server/tls/server-ca.nochain.crt::/var/lib/rancher/k3s/server/tls/server-ca.key"
+I1002 17:04:32.843013      71 controllermanager.go:622] Started "ttl"
+I1002 17:04:32.843076      71 ttl_controller.go:120] Starting TTL controller
+I1002 17:04:32.843087      71 shared_informer.go:270] Waiting for caches to sync for TTL
+I1002 17:04:32.889451      71 node_lifecycle_controller.go:492] Controller will reconcile labels.
+I1002 17:04:32.889530      71 controllermanager.go:622] Started "nodelifecycle"
+I1002 17:04:32.889625      71 node_lifecycle_controller.go:527] Sending events to api server.
+I1002 17:04:32.889665      71 node_lifecycle_controller.go:538] Starting node controller
+I1002 17:04:32.889678      71 shared_informer.go:270] Waiting for caches to sync for taint
+I1002 17:04:33.040444      71 controllermanager.go:622] Started "persistentvolume-binder"
+I1002 17:04:33.040550      71 pv_controller_base.go:318] Starting persistent volume controller
+I1002 17:04:33.040565      71 shared_informer.go:270] Waiting for caches to sync for persistent volume
+I1002 17:04:33.191164      71 controllermanager.go:622] Started "pv-protection"
+I1002 17:04:33.191220      71 pv_protection_controller.go:75] Starting PV protection controller
+I1002 17:04:33.191234      71 shared_informer.go:270] Waiting for caches to sync for PV protection
+I1002 17:04:33.341323      71 controllermanager.go:622] Started "ephemeral-volume"
+I1002 17:04:33.341345      71 controller.go:169] Starting ephemeral volume controller
+I1002 17:04:33.341358      71 shared_informer.go:270] Waiting for caches to sync for ephemeral
+I1002 17:04:33.490533      71 controllermanager.go:622] Started "replicationcontroller"
+I1002 17:04:33.490651      71 replica_set.go:201] Starting replicationcontroller controller
+I1002 17:04:33.490666      71 shared_informer.go:270] Waiting for caches to sync for ReplicationController
+I1002 17:04:33.642022      71 controllermanager.go:622] Started "daemonset"
+I1002 17:04:33.642143      71 daemon_controller.go:265] Starting daemon sets controller
+I1002 17:04:33.642156      71 shared_informer.go:270] Waiting for caches to sync for daemon sets
+I1002 17:04:33.791433      71 controllermanager.go:622] Started "replicaset"
+I1002 17:04:33.791553      71 replica_set.go:201] Starting replicaset controller
+I1002 17:04:33.791573      71 shared_informer.go:270] Waiting for caches to sync for ReplicaSet
+I1002 17:04:33.840289      71 controllermanager.go:622] Started "csrcleaner"
+W1002 17:04:33.840313      71 controllermanager.go:587] "service" is disabled
+I1002 17:04:33.840339      71 cleaner.go:82] Starting CSR cleaner controller
+I1002 17:04:33.991684      71 controllermanager.go:622] Started "attachdetach"
+I1002 17:04:33.991779      71 attach_detach_controller.go:328] Starting attach detach controller
+I1002 17:04:33.991791      71 shared_informer.go:270] Waiting for caches to sync for attach detach
+I1002 17:04:34.141760      71 controllermanager.go:622] Started "podgc"
+I1002 17:04:34.141778      71 gc_controller.go:102] Starting GC controller
+I1002 17:04:34.141791      71 shared_informer.go:270] Waiting for caches to sync for GC
+I1002 17:04:34.290892      71 controllermanager.go:622] Started "persistentvolume-expander"
+I1002 17:04:34.290969      71 expand_controller.go:340] Starting expand controller
+I1002 17:04:34.290991      71 shared_informer.go:270] Waiting for caches to sync for expand
+I1002 17:04:34.441770      71 controllermanager.go:622] Started "root-ca-cert-publisher"
+I1002 17:04:34.441825      71 publisher.go:101] Starting root CA certificate configmap publisher
+I1002 17:04:34.441836      71 shared_informer.go:270] Waiting for caches to sync for crt configmap
+I1002 17:04:34.754530      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for horizontalpodautoscalers.autoscaling
+I1002 17:04:34.754600      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for rkebootstraps.rke.cattle.io
+I1002 17:04:34.754635      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for clustertemplates.management.cattle.io
+I1002 17:04:34.754671      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for apprevisions.project.cattle.io
+I1002 17:04:34.754715      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for cronjobs.batch
+I1002 17:04:34.754751      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for machinesets.cluster.x-k8s.io
+I1002 17:04:34.754785      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for clusteralertgroups.management.cattle.io
+I1002 17:04:34.754883      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for serviceaccounts
+I1002 17:04:34.754938      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for helmcharts.helm.cattle.io
+I1002 17:04:34.754971      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for monitormetrics.management.cattle.io
+I1002 17:04:34.755003      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for samltokens.management.cattle.io
+I1002 17:04:34.755030      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for daemonsets.apps
+I1002 17:04:34.755055      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for controllerrevisions.apps
+I1002 17:04:34.755093      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for csistoragecapacities.storage.k8s.io
+I1002 17:04:34.755126      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for addons.k3s.cattle.io
+I1002 17:04:34.755154      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for etcdsnapshots.rke.cattle.io
+I1002 17:04:34.755182      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for clusters.cluster.x-k8s.io
+I1002 17:04:34.755210      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for clustertemplaterevisions.management.cattle.io
+I1002 17:04:34.755254      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for apps.catalog.cattle.io
+I1002 17:04:34.755290      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for rkebootstraptemplates.rke.cattle.io
+I1002 17:04:34.755321      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for clusteralertrules.management.cattle.io
+I1002 17:04:34.755349      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for nodetemplates.management.cattle.io
+I1002 17:04:34.755373      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for statefulsets.apps
+I1002 17:04:34.755401      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for clusters.provisioning.cattle.io
+I1002 17:04:34.755427      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for clusters.fleet.cattle.io
+I1002 17:04:34.755460      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for projectnetworkpolicies.management.cattle.io
+I1002 17:04:34.755490      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for clusteralerts.management.cattle.io
+I1002 17:04:34.755518      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for nodepools.management.cattle.io
+I1002 17:04:34.755545      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for globaldnsproviders.management.cattle.io
+I1002 17:04:34.755571      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for podsecuritypolicytemplateprojectbindings.management.cattle.io
+I1002 17:04:34.755604      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for rolebindings.rbac.authorization.k8s.io
+I1002 17:04:34.755632      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for managedcharts.management.cattle.io
+I1002 17:04:34.755671      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for replicasets.apps
+I1002 17:04:34.755700      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for custommachines.rke.cattle.io
+I1002 17:04:34.755727      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for catalogtemplates.management.cattle.io
+I1002 17:04:34.755759      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for clustermonitorgraphs.management.cattle.io
+I1002 17:04:34.755788      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for rkeaddons.management.cattle.io
+I1002 17:04:34.755818      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for limitranges
+I1002 17:04:34.755847      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for deployments.apps
+I1002 17:04:34.755893      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for endpoints
+I1002 17:04:34.755921      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for clusterroletemplatebindings.management.cattle.io
+I1002 17:04:34.755948      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for rkek8ssystemimages.management.cattle.io
+I1002 17:04:34.755980      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for ingresses.networking.k8s.io
+I1002 17:04:34.756008      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for clustergroups.fleet.cattle.io
+I1002 17:04:34.756037      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for machinedeployments.cluster.x-k8s.io
+I1002 17:04:34.756071      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for projectroletemplatebindings.management.cattle.io
+I1002 17:04:34.756104      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for podtemplates
+I1002 17:04:34.756133      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for networkpolicies.networking.k8s.io
+I1002 17:04:34.756160      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for leases.coordination.k8s.io
+I1002 17:04:34.756189      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for helmchartconfigs.helm.cattle.io
+I1002 17:04:34.756223      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for multiclusterapprevisions.management.cattle.io
+I1002 17:04:34.756255      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for rkek8sserviceoptions.management.cattle.io
+I1002 17:04:34.756282      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for jobs.batch
+I1002 17:04:34.756311      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for rkecontrolplanes.rke.cattle.io
+I1002 17:04:34.756350      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for notifiers.management.cattle.io
+I1002 17:04:34.756378      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for catalogtemplateversions.management.cattle.io
+I1002 17:04:34.756405      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for multiclusterapps.management.cattle.io
+I1002 17:04:34.756434      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for rkeclusters.rke.cattle.io
+I1002 17:04:34.756464      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for projects.management.cattle.io
+I1002 17:04:34.756494      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for clustercatalogs.management.cattle.io
+I1002 17:04:34.756525      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for projectalerts.management.cattle.io
+I1002 17:04:34.756555      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for apps.project.cattle.io
+I1002 17:04:34.756587      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for projectalertgroups.management.cattle.io
+I1002 17:04:34.756619      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for roles.rbac.authorization.k8s.io
+I1002 17:04:34.756650      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for endpointslices.discovery.k8s.io
+I1002 17:04:34.756683      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for operations.catalog.cattle.io
+I1002 17:04:34.756723      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for machines.cluster.x-k8s.io
+I1002 17:04:34.756755      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for nodes.management.cattle.io
+I1002 17:04:34.756785      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for clusterregistrationtokens.management.cattle.io
+I1002 17:04:34.756815      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for globaldnses.management.cattle.io
+I1002 17:04:34.756875      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for bundles.fleet.cattle.io
+I1002 17:04:34.756914      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for projectmonitorgraphs.management.cattle.io
+I1002 17:04:34.756945      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for etcdbackups.management.cattle.io
+I1002 17:04:34.756973      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for projectalertrules.management.cattle.io
+I1002 17:04:34.757031      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for poddisruptionbudgets.policy
+I1002 17:04:34.757061      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for machinehealthchecks.cluster.x-k8s.io
+I1002 17:04:34.757088      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for preferences.management.cattle.io
+I1002 17:04:34.757117      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for projectcatalogs.management.cattle.io
+I1002 17:04:34.757154      71 controllermanager.go:622] Started "resourcequota"
+I1002 17:04:34.757164      71 resource_quota_controller.go:277] Starting resource quota controller
+I1002 17:04:34.757183      71 shared_informer.go:270] Waiting for caches to sync for resource quota
+W1002 17:04:34.757169      71 controllermanager.go:587] "cloud-node-lifecycle" is disabled
+I1002 17:04:34.757245      71 resource_quota_monitor.go:295] QuotaMonitor running
+I1002 17:04:34.939891      71 controllermanager.go:622] Started "disruption"
+I1002 17:04:34.939956      71 disruption.go:424] Sending events to api server.
+I1002 17:04:34.939997      71 disruption.go:435] Starting disruption controller
+I1002 17:04:34.940008      71 shared_informer.go:270] Waiting for caches to sync for disruption
+I1002 17:04:34.989195      71 controllermanager.go:622] Started "csrapproving"
+W1002 17:04:34.989221      71 controllermanager.go:587] "route" is disabled
+I1002 17:04:34.989264      71 certificate_controller.go:112] Starting certificate controller "csrapproving"
+I1002 17:04:34.989278      71 shared_informer.go:270] Waiting for caches to sync for certificate-csrapproving
+I1002 17:04:35.142154      71 controllermanager.go:622] Started "clusterrole-aggregation"
+I1002 17:04:35.142176      71 clusterroleaggregation_controller.go:188] Starting ClusterRoleAggregator
+I1002 17:04:35.142190      71 shared_informer.go:270] Waiting for caches to sync for ClusterRoleAggregator
+I1002 17:04:35.291125      71 controllermanager.go:622] Started "pvc-protection"
+I1002 17:04:35.291180      71 pvc_protection_controller.go:99] "Starting PVC protection controller"
+I1002 17:04:35.291198      71 shared_informer.go:270] Waiting for caches to sync for PVC protection
+I1002 17:04:35.440986      71 controllermanager.go:622] Started "deployment"
+I1002 17:04:35.441127      71 deployment_controller.go:154] "Starting controller" controller="deployment"
+I1002 17:04:35.441145      71 shared_informer.go:270] Waiting for caches to sync for deployment
+I1002 17:04:35.740192      71 controllermanager.go:622] Started "horizontalpodautoscaling"
+W1002 17:04:35.740217      71 controllermanager.go:587] "bootstrapsigner" is disabled
+I1002 17:04:35.740264      71 horizontal.go:181] Starting HPA controller
+I1002 17:04:35.740281      71 shared_informer.go:270] Waiting for caches to sync for HPA
+I1002 17:04:35.891018      71 controllermanager.go:622] Started "endpoint"
+I1002 17:04:35.891137      71 endpoints_controller.go:178] Starting endpoint controller
+I1002 17:04:35.891157      71 shared_informer.go:270] Waiting for caches to sync for endpoint
+I1002 17:04:35.899764      71 shared_informer.go:270] Waiting for caches to sync for resource quota
+W1002 17:04:35.908184      71 actual_state_of_world.go:541] Failed to update statusUpdateNeeded field in actual state of world: Failed to set statusUpdateNeeded to needed true, because nodeName="local-node" does not exist
+I1002 17:04:35.913431      71 shared_informer.go:277] Caches are synced for service account
+I1002 17:04:35.920851      71 shared_informer.go:277] Caches are synced for job
+I1002 17:04:35.924118      71 shared_informer.go:270] Waiting for caches to sync for garbage collector
+I1002 17:04:35.926658      71 shared_informer.go:277] Caches are synced for namespace
+I1002 17:04:35.927979      71 shared_informer.go:277] Caches are synced for stateful set
+I1002 17:04:35.935296      71 shared_informer.go:277] Caches are synced for certificate-csrsigning-kubelet-serving
+I1002 17:04:35.936408      71 shared_informer.go:277] Caches are synced for certificate-csrsigning-legacy-unknown
+I1002 17:04:35.936417      71 shared_informer.go:277] Caches are synced for certificate-csrsigning-kubelet-client
+I1002 17:04:35.936455      71 shared_informer.go:277] Caches are synced for certificate-csrsigning-kube-apiserver-client
+I1002 17:04:35.940804      71 shared_informer.go:277] Caches are synced for persistent volume
+I1002 17:04:35.941184      71 shared_informer.go:277] Caches are synced for deployment
+I1002 17:04:35.941394      71 shared_informer.go:277] Caches are synced for ephemeral
+I1002 17:04:35.941866      71 shared_informer.go:277] Caches are synced for GC
+I1002 17:04:35.941866      71 shared_informer.go:277] Caches are synced for crt configmap
+I1002 17:04:35.942233      71 shared_informer.go:277] Caches are synced for daemon sets
+I1002 17:04:35.942293      71 shared_informer.go:277] Caches are synced for ClusterRoleAggregator
+I1002 17:04:35.943128      71 shared_informer.go:277] Caches are synced for TTL
+I1002 17:04:35.953092      71 shared_informer.go:277] Caches are synced for node
+I1002 17:04:35.953147      71 range_allocator.go:167] Sending events to api server.
+I1002 17:04:35.953178      71 range_allocator.go:171] Starting range CIDR allocator
+I1002 17:04:35.953185      71 shared_informer.go:270] Waiting for caches to sync for cidrallocator
+I1002 17:04:35.953196      71 shared_informer.go:277] Caches are synced for cidrallocator
+I1002 17:04:35.960348      71 range_allocator.go:372] Set node local-node PodCIDR to [10.42.0.0/24]
+time="2024-10-02T17:04:35Z" level=info msg="Flannel found PodCIDR assigned for node local-node"
+time="2024-10-02T17:04:35Z" level=info msg="The interface eth0 with ipv4 address 172.19.0.2 will be used by flannel"
+I1002 17:04:35.962030      71 kube.go:144] Waiting 10m0s for node controller to sync
+I1002 17:04:35.962048      71 kube.go:485] Starting kube subnet manager
+I1002 17:04:35.962112      71 shared_informer.go:277] Caches are synced for endpoint_slice
+I1002 17:04:35.971252      71 shared_informer.go:277] Caches are synced for cronjob
+I1002 17:04:35.994528      71 shared_informer.go:277] Caches are synced for attach detach
+I1002 17:04:35.994564      71 shared_informer.go:277] Caches are synced for expand
+I1002 17:04:35.994581      71 shared_informer.go:277] Caches are synced for PVC protection
+I1002 17:04:35.994564      71 shared_informer.go:277] Caches are synced for certificate-csrapproving
+I1002 17:04:35.994602      71 shared_informer.go:277] Caches are synced for TTL after finished
+I1002 17:04:35.994531      71 shared_informer.go:277] Caches are synced for ReplicaSet
+I1002 17:04:35.994534      71 shared_informer.go:277] Caches are synced for ReplicationController
+I1002 17:04:35.994583      71 shared_informer.go:277] Caches are synced for taint
+I1002 17:04:35.994531      71 shared_informer.go:277] Caches are synced for PV protection
+I1002 17:04:35.994646      71 shared_informer.go:277] Caches are synced for endpoint
+I1002 17:04:35.994731      71 taint_manager.go:206] "Starting NoExecuteTaintManager"
+I1002 17:04:35.994917      71 node_lifecycle_controller.go:1438] Initializing eviction metric for zone: 
+I1002 17:04:35.994947      71 taint_manager.go:211] "Sending events to api server"
+W1002 17:04:35.994996      71 node_lifecycle_controller.go:1053] Missing timestamp for Node local-node. Assuming now as a timestamp.
+I1002 17:04:35.995023      71 node_lifecycle_controller.go:1254] Controller detected that zone  is now in state Normal.
+I1002 17:04:35.995026      71 event.go:294] "Event occurred" object="local-node" fieldPath="" kind="Node" apiVersion="v1" type="Normal" reason="RegisteredNode" message="Node local-node event: Registered Node local-node in Controller"
+I1002 17:04:36.007677      71 shared_informer.go:277] Caches are synced for endpoint_slice_mirroring
+I1002 17:04:36.040437      71 shared_informer.go:277] Caches are synced for HPA
+I1002 17:04:36.040438      71 shared_informer.go:277] Caches are synced for disruption
+time="2024-10-02T17:04:36Z" level=info msg="Starting the netpol controller version , built on , go1.19.8"
+I1002 17:04:36.065844      71 network_policy_controller.go:163] Starting network policy controller
+I1002 17:04:36.081530      71 network_policy_controller.go:175] Starting network policy controller full sync goroutine
+I1002 17:04:36.397847      71 controller.go:615] quota admission added evaluator for: replicasets.apps
+I1002 17:04:36.400626      71 event.go:294] "Event occurred" object="kube-system/coredns" fieldPath="" kind="Deployment" apiVersion="apps/v1" type="Normal" reason="ScalingReplicaSet" message="Scaled up replica set coredns-59b4f5bbd5 to 1"
+I1002 17:04:36.794738      71 event.go:294] "Event occurred" object="kube-system/coredns-59b4f5bbd5" fieldPath="" kind="ReplicaSet" apiVersion="apps/v1" type="Normal" reason="SuccessfulCreate" message="Created pod: coredns-59b4f5bbd5-c5nxs"
+I1002 17:04:36.797742      71 topology_manager.go:210] "Topology Admit Handler"
+I1002 17:04:36.848051      71 reconciler_common.go:253] "operationExecutor.VerifyControllerAttachedVolume started for volume \"config-volume\" (UniqueName: \"kubernetes.io/configmap/05ec20ff-177e-448f-9a38-b7990e16dccd-config-volume\") pod \"coredns-59b4f5bbd5-c5nxs\" (UID: \"05ec20ff-177e-448f-9a38-b7990e16dccd\") " pod="kube-system/coredns-59b4f5bbd5-c5nxs"
+I1002 17:04:36.848082      71 reconciler_common.go:253] "operationExecutor.VerifyControllerAttachedVolume started for volume \"custom-config-volume\" (UniqueName: \"kubernetes.io/configmap/05ec20ff-177e-448f-9a38-b7990e16dccd-custom-config-volume\") pod \"coredns-59b4f5bbd5-c5nxs\" (UID: \"05ec20ff-177e-448f-9a38-b7990e16dccd\") " pod="kube-system/coredns-59b4f5bbd5-c5nxs"
+I1002 17:04:36.848109      71 reconciler_common.go:253] "operationExecutor.VerifyControllerAttachedVolume started for volume \"kube-api-access-7qn24\" (UniqueName: \"kubernetes.io/projected/05ec20ff-177e-448f-9a38-b7990e16dccd-kube-api-access-7qn24\") pod \"coredns-59b4f5bbd5-c5nxs\" (UID: \"05ec20ff-177e-448f-9a38-b7990e16dccd\") " pod="kube-system/coredns-59b4f5bbd5-c5nxs"
+I1002 17:04:36.946475      71 request.go:690] Waited for 1.048802114s due to client-side throttling, not priority and fairness, request: GET:https://127.0.0.1:6444/apis/cluster.x-k8s.io/v1beta1/machines?limit=500&resourceVersion=0
+I1002 17:04:36.962709      71 kube.go:151] Node controller sync successful
+I1002 17:04:36.962746      71 vxlan.go:140] VXLAN config: VNI=1 Port=0 GBP=false Learning=false DirectRouting=false
+I1002 17:04:36.968704      71 kube.go:506] Creating the node lease for IPv4. This is the n.Spec.PodCIDRs: [10.42.0.0/24]
+I1002 17:04:36.971779      71 iptables.go:290] generated 3 rules
+time="2024-10-02T17:04:36Z" level=info msg="Wrote flannel subnet file to /run/flannel/subnet.env"
+time="2024-10-02T17:04:36Z" level=info msg="Running flannel backend."
+I1002 17:04:36.972229      71 vxlan_network.go:64] watching for new subnet leases
+I1002 17:04:36.972528      71 iptables.go:290] generated 7 rules
+I1002 17:04:36.979752      71 iptables.go:283] bootstrap done
+I1002 17:04:36.988261      71 iptables.go:283] bootstrap done
+I1002 17:04:37.357900      71 shared_informer.go:277] Caches are synced for resource quota
+I1002 17:04:37.400549      71 shared_informer.go:277] Caches are synced for resource quota
+I1002 17:04:38.797969      71 shared_informer.go:277] Caches are synced for garbage collector
+I1002 17:04:38.797999      71 garbagecollector.go:163] Garbage collector: all resource monitors have synced. Proceeding to collect garbage
+I1002 17:04:38.824913      71 shared_informer.go:277] Caches are synced for garbage collector
+I1002 17:04:42.294718      71 controller.go:615] quota admission added evaluator for: projects.management.cattle.io
+I1002 17:04:42.473292      71 kuberuntime_manager.go:1114] "Updating runtime config through cri with podcidr" CIDR="10.42.0.0/24"
+I1002 17:04:42.474013      71 kubelet_network.go:61] "Updating Pod CIDR" originalPodCIDR="" newPodCIDR="10.42.0.0/24"
+I1002 17:04:42.797099      71 controller.go:615] quota admission added evaluator for: rkek8ssystemimages.management.cattle.io
+I1002 17:04:43.211105      71 controller.go:615] quota admission added evaluator for: nodes.management.cattle.io
+I1002 17:04:43.307893      71 controller.go:615] quota admission added evaluator for: clusterroletemplatebindings.management.cattle.io
+time="2024-10-02T17:04:43Z" level=info msg="Updating TLS secret for kube-system/k3s-serving (count: 11): map[field.cattle.io/projectId:local:p-2kq2j listener.cattle.io/cn-10.43.0.1:10.43.0.1 listener.cattle.io/cn-127.0.0.1:127.0.0.1 listener.cattle.io/cn-172.19.0.2:172.19.0.2 listener.cattle.io/cn-__1-f16284:::1 listener.cattle.io/cn-kubernetes:kubernetes listener.cattle.io/cn-kubernetes.default:kubernetes.default listener.cattle.io/cn-kubernetes.default.svc:kubernetes.default.svc listener.cattle.io/cn-kubernetes.default.svc.cluster.local:kubernetes.default.svc.cluster.local listener.cattle.io/cn-local-node:local-node listener.cattle.io/cn-localhost:localhost listener.cattle.io/fingerprint:SHA1=487840810904B676D67C3B418CE8D6688D47E932]"
+time="2024-10-02T17:04:43Z" level=info msg="Active TLS secret kube-system/k3s-serving (ver=1797) (count 11): map[field.cattle.io/projectId:local:p-2kq2j listener.cattle.io/cn-10.43.0.1:10.43.0.1 listener.cattle.io/cn-127.0.0.1:127.0.0.1 listener.cattle.io/cn-172.19.0.2:172.19.0.2 listener.cattle.io/cn-__1-f16284:::1 listener.cattle.io/cn-kubernetes:kubernetes listener.cattle.io/cn-kubernetes.default:kubernetes.default listener.cattle.io/cn-kubernetes.default.svc:kubernetes.default.svc listener.cattle.io/cn-kubernetes.default.svc.cluster.local:kubernetes.default.svc.cluster.local listener.cattle.io/cn-local-node:local-node listener.cattle.io/cn-localhost:localhost listener.cattle.io/fingerprint:SHA1=487840810904B676D67C3B418CE8D6688D47E932]"
+I1002 17:04:43.798604      71 controller.go:615] quota admission added evaluator for: clusters.provisioning.cattle.io
+I1002 17:04:43.822807      71 controller.go:615] quota admission added evaluator for: clusterregistrationtokens.management.cattle.io
+I1002 17:04:44.090255      71 controller.go:615] quota admission added evaluator for: clustergroups.fleet.cattle.io
+I1002 17:04:44.101416      71 controller.go:615] quota admission added evaluator for: clusters.fleet.cattle.io
+I1002 17:04:45.234992      71 controller.go:615] quota admission added evaluator for: rkek8sserviceoptions.management.cattle.io
+I1002 17:04:45.556772      71 controller.go:615] quota admission added evaluator for: rkeaddons.management.cattle.io
+I1002 17:04:45.696297      71 controller.go:615] quota admission added evaluator for: catalogtemplates.management.cattle.io
+I1002 17:04:45.700875      71 controller.go:615] quota admission added evaluator for: catalogtemplateversions.management.cattle.io
+I1002 17:04:45.859358      71 pod_startup_latency_tracker.go:102] "Observed pod startup duration" pod="kube-system/coredns-59b4f5bbd5-c5nxs" podStartSLOduration=-9.223372026995462e+09 pod.CreationTimestamp="2024-10-02 17:04:36 +0000 UTC" firstStartedPulling="2024-10-02 17:04:41.167223629 +0000 UTC m=+26.894221600" lastFinishedPulling="0001-01-01 00:00:00 +0000 UTC" observedRunningTime="2024-10-02 17:04:45.848945053 +0000 UTC m=+31.575943044" watchObservedRunningTime="2024-10-02 17:04:45.859313983 +0000 UTC m=+31.586311984"
+I1002 17:04:55.549168      71 topology_manager.go:210] "Topology Admit Handler"
+I1002 17:04:55.557040      71 controller.go:615] quota admission added evaluator for: operations.catalog.cattle.io
+I1002 17:04:55.677095      71 reconciler_common.go:253] "operationExecutor.VerifyControllerAttachedVolume started for volume \"data\" (UniqueName: \"kubernetes.io/secret/4ca2515a-cde7-4ca9-a80d-8477dc70c788-data\") pod \"helm-operation-rf5fq\" (UID: \"4ca2515a-cde7-4ca9-a80d-8477dc70c788\") " pod="cattle-system/helm-operation-rf5fq"
+I1002 17:04:55.677126      71 reconciler_common.go:253] "operationExecutor.VerifyControllerAttachedVolume started for volume \"admin-kubeconfig\" (UniqueName: \"kubernetes.io/configmap/4ca2515a-cde7-4ca9-a80d-8477dc70c788-admin-kubeconfig\") pod \"helm-operation-rf5fq\" (UID: \"4ca2515a-cde7-4ca9-a80d-8477dc70c788\") " pod="cattle-system/helm-operation-rf5fq"
+I1002 17:04:55.677148      71 reconciler_common.go:253] "operationExecutor.VerifyControllerAttachedVolume started for volume \"user-kubeconfig\" (UniqueName: \"kubernetes.io/configmap/4ca2515a-cde7-4ca9-a80d-8477dc70c788-user-kubeconfig\") pod \"helm-operation-rf5fq\" (UID: \"4ca2515a-cde7-4ca9-a80d-8477dc70c788\") " pod="cattle-system/helm-operation-rf5fq"
+I1002 17:04:55.677172      71 reconciler_common.go:253] "operationExecutor.VerifyControllerAttachedVolume started for volume \"pod-impersonation-helm-op-7ws65-token\" (UniqueName: \"kubernetes.io/secret/4ca2515a-cde7-4ca9-a80d-8477dc70c788-pod-impersonation-helm-op-7ws65-token\") pod \"helm-operation-rf5fq\" (UID: \"4ca2515a-cde7-4ca9-a80d-8477dc70c788\") " pod="cattle-system/helm-operation-rf5fq"
+I1002 17:05:07.410021      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for prometheusrules.monitoring.coreos.com
+I1002 17:05:07.410045      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for azureconfigs.rke-machine-config.cattle.io
+I1002 17:05:07.410067      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for linodemachinetemplates.rke-machine.cattle.io
+I1002 17:05:07.410089      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for linodeconfigs.rke-machine-config.cattle.io
+I1002 17:05:07.410104      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for harvestermachinetemplates.rke-machine.cattle.io
+I1002 17:05:07.410121      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for azuremachinetemplates.rke-machine.cattle.io
+I1002 17:05:07.410146      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for amazonec2configs.rke-machine-config.cattle.io
+I1002 17:05:07.410163      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for linodemachines.rke-machine.cattle.io
+I1002 17:05:07.410178      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for vmwarevsphereconfigs.rke-machine-config.cattle.io
+I1002 17:05:07.410194      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for alertmanagers.monitoring.coreos.com
+I1002 17:05:07.410221      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for prometheuses.monitoring.coreos.com
+I1002 17:05:07.410238      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for vmwarevspheremachinetemplates.rke-machine.cattle.io
+I1002 17:05:07.410261      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for amazonec2machinetemplates.rke-machine.cattle.io
+I1002 17:05:07.410277      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for digitaloceanconfigs.rke-machine-config.cattle.io
+I1002 17:05:07.410291      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for harvesterconfigs.rke-machine-config.cattle.io
+I1002 17:05:07.410308      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for harvestermachines.rke-machine.cattle.io
+I1002 17:05:07.410322      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for amazonec2machines.rke-machine.cattle.io
+I1002 17:05:07.410345      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for digitaloceanmachines.rke-machine.cattle.io
+I1002 17:05:07.410364      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for servicemonitors.monitoring.coreos.com
+I1002 17:05:07.410386      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for vmwarevspheremachines.rke-machine.cattle.io
+I1002 17:05:07.410409      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for azuremachines.rke-machine.cattle.io
+I1002 17:05:07.410437      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for digitaloceanmachinetemplates.rke-machine.cattle.io
+I1002 17:05:07.410955      71 shared_informer.go:270] Waiting for caches to sync for resource quota
+I1002 17:05:07.511756      71 shared_informer.go:277] Caches are synced for resource quota
+I1002 17:05:08.687635      71 controller.go:615] quota admission added evaluator for: apps.catalog.cattle.io
+I1002 17:05:08.843597      71 shared_informer.go:270] Waiting for caches to sync for garbage collector
+I1002 17:05:09.044097      71 shared_informer.go:277] Caches are synced for garbage collector
+W1002 17:05:09.692838      71 cacher.go:162] Terminating all watchers from cacher bundles.fleet.cattle.io
+W1002 17:05:09.727453      71 cacher.go:162] Terminating all watchers from cacher clustergroups.fleet.cattle.io
+W1002 17:05:09.764042      71 cacher.go:162] Terminating all watchers from cacher clusters.fleet.cattle.io
+I1002 17:05:11.894691      71 scope.go:115] "RemoveContainer" containerID="2fc660b1b7c4ce8ff9339e86febde7d998d542c2d212e9dec906a8a7b8a43cdd"
+I1002 17:05:13.984845      71 topology_manager.go:210] "Topology Admit Handler"
+E1002 17:05:13.984877      71 cpu_manager.go:395] "RemoveStaleState: removing container" podUID="4ca2515a-cde7-4ca9-a80d-8477dc70c788" containerName="helm"
+E1002 17:05:13.984885      71 cpu_manager.go:395] "RemoveStaleState: removing container" podUID="4ca2515a-cde7-4ca9-a80d-8477dc70c788" containerName="proxy"
+I1002 17:05:13.984900      71 memory_manager.go:346] "RemoveStaleState removing state" podUID="4ca2515a-cde7-4ca9-a80d-8477dc70c788" containerName="helm"
+I1002 17:05:13.984906      71 memory_manager.go:346] "RemoveStaleState removing state" podUID="4ca2515a-cde7-4ca9-a80d-8477dc70c788" containerName="proxy"
+I1002 17:05:14.086324      71 reconciler_common.go:169] "operationExecutor.UnmountVolume started for volume \"admin-kubeconfig\" (UniqueName: \"kubernetes.io/configmap/4ca2515a-cde7-4ca9-a80d-8477dc70c788-admin-kubeconfig\") pod \"4ca2515a-cde7-4ca9-a80d-8477dc70c788\" (UID: \"4ca2515a-cde7-4ca9-a80d-8477dc70c788\") "
+I1002 17:05:14.086408      71 reconciler_common.go:169] "operationExecutor.UnmountVolume started for volume \"pod-impersonation-helm-op-7ws65-token\" (UniqueName: \"kubernetes.io/secret/4ca2515a-cde7-4ca9-a80d-8477dc70c788-pod-impersonation-helm-op-7ws65-token\") pod \"4ca2515a-cde7-4ca9-a80d-8477dc70c788\" (UID: \"4ca2515a-cde7-4ca9-a80d-8477dc70c788\") "
+I1002 17:05:14.086477      71 reconciler_common.go:169] "operationExecutor.UnmountVolume started for volume \"data\" (UniqueName: \"kubernetes.io/secret/4ca2515a-cde7-4ca9-a80d-8477dc70c788-data\") pod \"4ca2515a-cde7-4ca9-a80d-8477dc70c788\" (UID: \"4ca2515a-cde7-4ca9-a80d-8477dc70c788\") "
+I1002 17:05:14.086545      71 reconciler_common.go:169] "operationExecutor.UnmountVolume started for volume \"user-kubeconfig\" (UniqueName: \"kubernetes.io/configmap/4ca2515a-cde7-4ca9-a80d-8477dc70c788-user-kubeconfig\") pod \"4ca2515a-cde7-4ca9-a80d-8477dc70c788\" (UID: \"4ca2515a-cde7-4ca9-a80d-8477dc70c788\") "
+I1002 17:05:14.086631      71 reconciler_common.go:253] "operationExecutor.VerifyControllerAttachedVolume started for volume \"data\" (UniqueName: \"kubernetes.io/secret/c2500fbc-6f28-4ceb-b476-b92b5a159c26-data\") pod \"helm-operation-2vtds\" (UID: \"c2500fbc-6f28-4ceb-b476-b92b5a159c26\") " pod="cattle-system/helm-operation-2vtds"
+I1002 17:05:14.086738      71 reconciler_common.go:253] "operationExecutor.VerifyControllerAttachedVolume started for volume \"admin-kubeconfig\" (UniqueName: \"kubernetes.io/configmap/c2500fbc-6f28-4ceb-b476-b92b5a159c26-admin-kubeconfig\") pod \"helm-operation-2vtds\" (UID: \"c2500fbc-6f28-4ceb-b476-b92b5a159c26\") " pod="cattle-system/helm-operation-2vtds"
+I1002 17:05:14.086821      71 reconciler_common.go:253] "operationExecutor.VerifyControllerAttachedVolume started for volume \"pod-impersonation-helm-op-47xxk-token\" (UniqueName: \"kubernetes.io/secret/c2500fbc-6f28-4ceb-b476-b92b5a159c26-pod-impersonation-helm-op-47xxk-token\") pod \"helm-operation-2vtds\" (UID: \"c2500fbc-6f28-4ceb-b476-b92b5a159c26\") " pod="cattle-system/helm-operation-2vtds"
+I1002 17:05:14.086895      71 reconciler_common.go:253] "operationExecutor.VerifyControllerAttachedVolume started for volume \"user-kubeconfig\" (UniqueName: \"kubernetes.io/configmap/c2500fbc-6f28-4ceb-b476-b92b5a159c26-user-kubeconfig\") pod \"helm-operation-2vtds\" (UID: \"c2500fbc-6f28-4ceb-b476-b92b5a159c26\") " pod="cattle-system/helm-operation-2vtds"
+I1002 17:05:14.088534      71 operation_generator.go:900] UnmountVolume.TearDown succeeded for volume "kubernetes.io/secret/4ca2515a-cde7-4ca9-a80d-8477dc70c788-pod-impersonation-helm-op-7ws65-token" (OuterVolumeSpecName: "pod-impersonation-helm-op-7ws65-token") pod "4ca2515a-cde7-4ca9-a80d-8477dc70c788" (UID: "4ca2515a-cde7-4ca9-a80d-8477dc70c788"). InnerVolumeSpecName "pod-impersonation-helm-op-7ws65-token". PluginName "kubernetes.io/secret", VolumeGidValue ""
+W1002 17:05:14.089024      71 empty_dir.go:525] Warning: Failed to clear quota on /var/lib/kubelet/pods/4ca2515a-cde7-4ca9-a80d-8477dc70c788/volumes/kubernetes.io~configmap/user-kubeconfig: clearQuota called, but quotas disabled
+I1002 17:05:14.089063      71 operation_generator.go:900] UnmountVolume.TearDown succeeded for volume "kubernetes.io/secret/4ca2515a-cde7-4ca9-a80d-8477dc70c788-data" (OuterVolumeSpecName: "data") pod "4ca2515a-cde7-4ca9-a80d-8477dc70c788" (UID: "4ca2515a-cde7-4ca9-a80d-8477dc70c788"). InnerVolumeSpecName "data". PluginName "kubernetes.io/secret", VolumeGidValue ""
+I1002 17:05:14.089256      71 operation_generator.go:900] UnmountVolume.TearDown succeeded for volume "kubernetes.io/configmap/4ca2515a-cde7-4ca9-a80d-8477dc70c788-user-kubeconfig" (OuterVolumeSpecName: "user-kubeconfig") pod "4ca2515a-cde7-4ca9-a80d-8477dc70c788" (UID: "4ca2515a-cde7-4ca9-a80d-8477dc70c788"). InnerVolumeSpecName "user-kubeconfig". PluginName "kubernetes.io/configmap", VolumeGidValue ""
+W1002 17:05:14.090263      71 empty_dir.go:525] Warning: Failed to clear quota on /var/lib/kubelet/pods/4ca2515a-cde7-4ca9-a80d-8477dc70c788/volumes/kubernetes.io~configmap/admin-kubeconfig: clearQuota called, but quotas disabled
+I1002 17:05:14.090609      71 operation_generator.go:900] UnmountVolume.TearDown succeeded for volume "kubernetes.io/configmap/4ca2515a-cde7-4ca9-a80d-8477dc70c788-admin-kubeconfig" (OuterVolumeSpecName: "admin-kubeconfig") pod "4ca2515a-cde7-4ca9-a80d-8477dc70c788" (UID: "4ca2515a-cde7-4ca9-a80d-8477dc70c788"). InnerVolumeSpecName "admin-kubeconfig". PluginName "kubernetes.io/configmap", VolumeGidValue ""
+I1002 17:05:14.187761      71 reconciler_common.go:295] "Volume detached for volume \"data\" (UniqueName: \"kubernetes.io/secret/4ca2515a-cde7-4ca9-a80d-8477dc70c788-data\") on node \"local-node\" DevicePath \"\""
+I1002 17:05:14.187780      71 reconciler_common.go:295] "Volume detached for volume \"user-kubeconfig\" (UniqueName: \"kubernetes.io/configmap/4ca2515a-cde7-4ca9-a80d-8477dc70c788-user-kubeconfig\") on node \"local-node\" DevicePath \"\""
+I1002 17:05:14.187792      71 reconciler_common.go:295] "Volume detached for volume \"admin-kubeconfig\" (UniqueName: \"kubernetes.io/configmap/4ca2515a-cde7-4ca9-a80d-8477dc70c788-admin-kubeconfig\") on node \"local-node\" DevicePath \"\""
+I1002 17:05:14.187808      71 reconciler_common.go:295] "Volume detached for volume \"pod-impersonation-helm-op-7ws65-token\" (UniqueName: \"kubernetes.io/secret/4ca2515a-cde7-4ca9-a80d-8477dc70c788-pod-impersonation-helm-op-7ws65-token\") on node \"local-node\" DevicePath \"\""
+I1002 17:05:14.902336      71 pod_container_deletor.go:80] "Container not found in pod's containers" containerID="0d0f419a448f7ed177c033342543bd361b2930a8bd27a53ff8b6539891b0f8fa"
+I1002 17:05:14.917032      71 pod_startup_latency_tracker.go:102] "Observed pod startup duration" pod="cattle-system/helm-operation-2vtds" podStartSLOduration=1.916993213 pod.CreationTimestamp="2024-10-02 17:05:13 +0000 UTC" firstStartedPulling="0001-01-01 00:00:00 +0000 UTC" lastFinishedPulling="0001-01-01 00:00:00 +0000 UTC" observedRunningTime="2024-10-02 17:05:14.916863257 +0000 UTC m=+60.643861228" watchObservedRunningTime="2024-10-02 17:05:14.916993213 +0000 UTC m=+60.643991185"
+I1002 17:05:17.065687      71 alloc.go:327] "allocated clusterIPs" service="cattle-fleet-system/gitjob" clusterIPs=map[IPv4:10.43.191.226]
+I1002 17:05:17.073714      71 event.go:294] "Event occurred" object="cattle-fleet-system/fleet-controller" fieldPath="" kind="Deployment" apiVersion="apps/v1" type="Normal" reason="ScalingReplicaSet" message="Scaled up replica set fleet-controller-77dbcb4978 to 1"
+I1002 17:05:17.074296      71 event.go:294] "Event occurred" object="cattle-fleet-system/gitjob" fieldPath="" kind="Deployment" apiVersion="apps/v1" type="Normal" reason="ScalingReplicaSet" message="Scaled up replica set gitjob-7c95f8997c to 1"
+I1002 17:05:17.078938      71 event.go:294] "Event occurred" object="cattle-fleet-system/fleet-controller-77dbcb4978" fieldPath="" kind="ReplicaSet" apiVersion="apps/v1" type="Normal" reason="SuccessfulCreate" message="Created pod: fleet-controller-77dbcb4978-8mjnr"
+I1002 17:05:17.078970      71 event.go:294] "Event occurred" object="cattle-fleet-system/gitjob-7c95f8997c" fieldPath="" kind="ReplicaSet" apiVersion="apps/v1" type="Normal" reason="SuccessfulCreate" message="Created pod: gitjob-7c95f8997c-f4l8r"
+I1002 17:05:17.083431      71 topology_manager.go:210] "Topology Admit Handler"
+I1002 17:05:17.083548      71 topology_manager.go:210] "Topology Admit Handler"
+I1002 17:05:17.204722      71 reconciler_common.go:253] "operationExecutor.VerifyControllerAttachedVolume started for volume \"kube-api-access-gz4m9\" (UniqueName: \"kubernetes.io/projected/5ab51bb7-d550-48c0-8a78-2099291b48a1-kube-api-access-gz4m9\") pod \"fleet-controller-77dbcb4978-8mjnr\" (UID: \"5ab51bb7-d550-48c0-8a78-2099291b48a1\") " pod="cattle-fleet-system/fleet-controller-77dbcb4978-8mjnr"
+I1002 17:05:17.204758      71 reconciler_common.go:253] "operationExecutor.VerifyControllerAttachedVolume started for volume \"kube-api-access-zbmm5\" (UniqueName: \"kubernetes.io/projected/c4cd5db6-33c6-46ca-9a1f-69ac58f3c9ee-kube-api-access-zbmm5\") pod \"gitjob-7c95f8997c-f4l8r\" (UID: \"c4cd5db6-33c6-46ca-9a1f-69ac58f3c9ee\") " pod="cattle-fleet-system/gitjob-7c95f8997c-f4l8r"
+I1002 17:05:17.204819      71 reconciler_common.go:253] "operationExecutor.VerifyControllerAttachedVolume started for volume \"tmp\" (UniqueName: \"kubernetes.io/empty-dir/5ab51bb7-d550-48c0-8a78-2099291b48a1-tmp\") pod \"fleet-controller-77dbcb4978-8mjnr\" (UID: \"5ab51bb7-d550-48c0-8a78-2099291b48a1\") " pod="cattle-fleet-system/fleet-controller-77dbcb4978-8mjnr"
+I1002 17:05:27.368909      71 controller.go:615] quota admission added evaluator for: bundles.fleet.cattle.io
+I1002 17:05:27.401744      71 controller.go:615] quota admission added evaluator for: bundledeployments.fleet.cattle.io
+I1002 17:05:27.943815      71 pod_startup_latency_tracker.go:102] "Observed pod startup duration" pod="cattle-fleet-system/fleet-controller-77dbcb4978-8mjnr" podStartSLOduration=-9.223372025911009e+09 pod.CreationTimestamp="2024-10-02 17:05:17 +0000 UTC" firstStartedPulling="2024-10-02 17:05:17.494804417 +0000 UTC m=+63.221802398" lastFinishedPulling="0001-01-01 00:00:00 +0000 UTC" observedRunningTime="2024-10-02 17:05:27.943583333 +0000 UTC m=+73.670581344" watchObservedRunningTime="2024-10-02 17:05:27.943767683 +0000 UTC m=+73.670765664"
+I1002 17:05:27.955396      71 pod_startup_latency_tracker.go:102] "Observed pod startup duration" pod="cattle-fleet-system/gitjob-7c95f8997c-f4l8r" podStartSLOduration=-9.223372025899458e+09 pod.CreationTimestamp="2024-10-02 17:05:17 +0000 UTC" firstStartedPulling="2024-10-02 17:05:17.496595008 +0000 UTC m=+63.223592980" lastFinishedPulling="0001-01-01 00:00:00 +0000 UTC" observedRunningTime="2024-10-02 17:05:27.955206583 +0000 UTC m=+73.682204594" watchObservedRunningTime="2024-10-02 17:05:27.955317564 +0000 UTC m=+73.682315575"
+I1002 17:05:29.938606      71 scope.go:115] "RemoveContainer" containerID="35d61773203960c2887d8e6524c092967700cc415c5c27f46b190a341a91ce76"
+I1002 17:05:32.103836      71 topology_manager.go:210] "Topology Admit Handler"
+E1002 17:05:32.103904      71 cpu_manager.go:395] "RemoveStaleState: removing container" podUID="c2500fbc-6f28-4ceb-b476-b92b5a159c26" containerName="proxy"
+E1002 17:05:32.103930      71 cpu_manager.go:395] "RemoveStaleState: removing container" podUID="c2500fbc-6f28-4ceb-b476-b92b5a159c26" containerName="helm"
+I1002 17:05:32.103975      71 memory_manager.go:346] "RemoveStaleState removing state" podUID="c2500fbc-6f28-4ceb-b476-b92b5a159c26" containerName="helm"
+I1002 17:05:32.103994      71 memory_manager.go:346] "RemoveStaleState removing state" podUID="c2500fbc-6f28-4ceb-b476-b92b5a159c26" containerName="proxy"
+I1002 17:05:32.184401      71 reconciler_common.go:169] "operationExecutor.UnmountVolume started for volume \"data\" (UniqueName: \"kubernetes.io/secret/c2500fbc-6f28-4ceb-b476-b92b5a159c26-data\") pod \"c2500fbc-6f28-4ceb-b476-b92b5a159c26\" (UID: \"c2500fbc-6f28-4ceb-b476-b92b5a159c26\") "
+I1002 17:05:32.184464      71 reconciler_common.go:169] "operationExecutor.UnmountVolume started for volume \"user-kubeconfig\" (UniqueName: \"kubernetes.io/configmap/c2500fbc-6f28-4ceb-b476-b92b5a159c26-user-kubeconfig\") pod \"c2500fbc-6f28-4ceb-b476-b92b5a159c26\" (UID: \"c2500fbc-6f28-4ceb-b476-b92b5a159c26\") "
+I1002 17:05:32.184514      71 reconciler_common.go:169] "operationExecutor.UnmountVolume started for volume \"admin-kubeconfig\" (UniqueName: \"kubernetes.io/configmap/c2500fbc-6f28-4ceb-b476-b92b5a159c26-admin-kubeconfig\") pod \"c2500fbc-6f28-4ceb-b476-b92b5a159c26\" (UID: \"c2500fbc-6f28-4ceb-b476-b92b5a159c26\") "
+I1002 17:05:32.184569      71 reconciler_common.go:169] "operationExecutor.UnmountVolume started for volume \"pod-impersonation-helm-op-47xxk-token\" (UniqueName: \"kubernetes.io/secret/c2500fbc-6f28-4ceb-b476-b92b5a159c26-pod-impersonation-helm-op-47xxk-token\") pod \"c2500fbc-6f28-4ceb-b476-b92b5a159c26\" (UID: \"c2500fbc-6f28-4ceb-b476-b92b5a159c26\") "
+I1002 17:05:32.184638      71 reconciler_common.go:253] "operationExecutor.VerifyControllerAttachedVolume started for volume \"data\" (UniqueName: \"kubernetes.io/secret/5d673258-1fe4-4b7d-bc93-6b78f19af5f4-data\") pod \"helm-operation-rlh5b\" (UID: \"5d673258-1fe4-4b7d-bc93-6b78f19af5f4\") " pod="cattle-system/helm-operation-rlh5b"
+I1002 17:05:32.184697      71 reconciler_common.go:253] "operationExecutor.VerifyControllerAttachedVolume started for volume \"user-kubeconfig\" (UniqueName: \"kubernetes.io/configmap/5d673258-1fe4-4b7d-bc93-6b78f19af5f4-user-kubeconfig\") pod \"helm-operation-rlh5b\" (UID: \"5d673258-1fe4-4b7d-bc93-6b78f19af5f4\") " pod="cattle-system/helm-operation-rlh5b"
+I1002 17:05:32.184757      71 reconciler_common.go:253] "operationExecutor.VerifyControllerAttachedVolume started for volume \"pod-impersonation-helm-op-mbn66-token\" (UniqueName: \"kubernetes.io/secret/5d673258-1fe4-4b7d-bc93-6b78f19af5f4-pod-impersonation-helm-op-mbn66-token\") pod \"helm-operation-rlh5b\" (UID: \"5d673258-1fe4-4b7d-bc93-6b78f19af5f4\") " pod="cattle-system/helm-operation-rlh5b"
+I1002 17:05:32.184887      71 reconciler_common.go:253] "operationExecutor.VerifyControllerAttachedVolume started for volume \"admin-kubeconfig\" (UniqueName: \"kubernetes.io/configmap/5d673258-1fe4-4b7d-bc93-6b78f19af5f4-admin-kubeconfig\") pod \"helm-operation-rlh5b\" (UID: \"5d673258-1fe4-4b7d-bc93-6b78f19af5f4\") " pod="cattle-system/helm-operation-rlh5b"
+I1002 17:05:32.186956      71 operation_generator.go:900] UnmountVolume.TearDown succeeded for volume "kubernetes.io/secret/c2500fbc-6f28-4ceb-b476-b92b5a159c26-data" (OuterVolumeSpecName: "data") pod "c2500fbc-6f28-4ceb-b476-b92b5a159c26" (UID: "c2500fbc-6f28-4ceb-b476-b92b5a159c26"). InnerVolumeSpecName "data". PluginName "kubernetes.io/secret", VolumeGidValue ""
+W1002 17:05:32.187353      71 empty_dir.go:525] Warning: Failed to clear quota on /var/lib/kubelet/pods/c2500fbc-6f28-4ceb-b476-b92b5a159c26/volumes/kubernetes.io~configmap/user-kubeconfig: clearQuota called, but quotas disabled
+I1002 17:05:32.187517      71 operation_generator.go:900] UnmountVolume.TearDown succeeded for volume "kubernetes.io/configmap/c2500fbc-6f28-4ceb-b476-b92b5a159c26-user-kubeconfig" (OuterVolumeSpecName: "user-kubeconfig") pod "c2500fbc-6f28-4ceb-b476-b92b5a159c26" (UID: "c2500fbc-6f28-4ceb-b476-b92b5a159c26"). InnerVolumeSpecName "user-kubeconfig". PluginName "kubernetes.io/configmap", VolumeGidValue ""
+I1002 17:05:32.187826      71 operation_generator.go:900] UnmountVolume.TearDown succeeded for volume "kubernetes.io/secret/c2500fbc-6f28-4ceb-b476-b92b5a159c26-pod-impersonation-helm-op-47xxk-token" (OuterVolumeSpecName: "pod-impersonation-helm-op-47xxk-token") pod "c2500fbc-6f28-4ceb-b476-b92b5a159c26" (UID: "c2500fbc-6f28-4ceb-b476-b92b5a159c26"). InnerVolumeSpecName "pod-impersonation-helm-op-47xxk-token". PluginName "kubernetes.io/secret", VolumeGidValue ""
+W1002 17:05:32.189885      71 empty_dir.go:525] Warning: Failed to clear quota on /var/lib/kubelet/pods/c2500fbc-6f28-4ceb-b476-b92b5a159c26/volumes/kubernetes.io~configmap/admin-kubeconfig: clearQuota called, but quotas disabled
+I1002 17:05:32.190313      71 operation_generator.go:900] UnmountVolume.TearDown succeeded for volume "kubernetes.io/configmap/c2500fbc-6f28-4ceb-b476-b92b5a159c26-admin-kubeconfig" (OuterVolumeSpecName: "admin-kubeconfig") pod "c2500fbc-6f28-4ceb-b476-b92b5a159c26" (UID: "c2500fbc-6f28-4ceb-b476-b92b5a159c26"). InnerVolumeSpecName "admin-kubeconfig". PluginName "kubernetes.io/configmap", VolumeGidValue ""
+I1002 17:05:32.285143      71 reconciler_common.go:295] "Volume detached for volume \"data\" (UniqueName: \"kubernetes.io/secret/c2500fbc-6f28-4ceb-b476-b92b5a159c26-data\") on node \"local-node\" DevicePath \"\""
+I1002 17:05:32.285163      71 reconciler_common.go:295] "Volume detached for volume \"user-kubeconfig\" (UniqueName: \"kubernetes.io/configmap/c2500fbc-6f28-4ceb-b476-b92b5a159c26-user-kubeconfig\") on node \"local-node\" DevicePath \"\""
+I1002 17:05:32.285176      71 reconciler_common.go:295] "Volume detached for volume \"admin-kubeconfig\" (UniqueName: \"kubernetes.io/configmap/c2500fbc-6f28-4ceb-b476-b92b5a159c26-admin-kubeconfig\") on node \"local-node\" DevicePath \"\""
+I1002 17:05:32.285189      71 reconciler_common.go:295] "Volume detached for volume \"pod-impersonation-helm-op-47xxk-token\" (UniqueName: \"kubernetes.io/secret/c2500fbc-6f28-4ceb-b476-b92b5a159c26-pod-impersonation-helm-op-47xxk-token\") on node \"local-node\" DevicePath \"\""
+I1002 17:05:32.945682      71 pod_container_deletor.go:80] "Container not found in pod's containers" containerID="57e73773ceffd193bbab93071df1380cd20943593e38cb1bef08010c91c300d9"
+I1002 17:05:32.956811      71 pod_startup_latency_tracker.go:102] "Observed pod startup duration" pod="cattle-system/helm-operation-rlh5b" podStartSLOduration=0.956774417 pod.CreationTimestamp="2024-10-02 17:05:32 +0000 UTC" firstStartedPulling="0001-01-01 00:00:00 +0000 UTC" lastFinishedPulling="0001-01-01 00:00:00 +0000 UTC" observedRunningTime="2024-10-02 17:05:32.956677854 +0000 UTC m=+78.683675935" watchObservedRunningTime="2024-10-02 17:05:32.956774417 +0000 UTC m=+78.683772398"
+I1002 17:05:34.952402      71 scope.go:115] "RemoveContainer" containerID="9595546650c2363bb022aa274948a73ed9e627404d33308c2b2ab03bdecc5a10"
+I1002 17:05:37.028152      71 topology_manager.go:210] "Topology Admit Handler"
+I1002 17:05:37.115813      71 reconciler_common.go:253] "operationExecutor.VerifyControllerAttachedVolume started for volume \"admin-kubeconfig\" (UniqueName: \"kubernetes.io/configmap/72d8a4f4-d397-4c8c-b1c0-2d72da606a79-admin-kubeconfig\") pod \"helm-operation-x8jvh\" (UID: \"72d8a4f4-d397-4c8c-b1c0-2d72da606a79\") " pod="cattle-system/helm-operation-x8jvh"
+I1002 17:05:37.115846      71 reconciler_common.go:253] "operationExecutor.VerifyControllerAttachedVolume started for volume \"data\" (UniqueName: \"kubernetes.io/secret/72d8a4f4-d397-4c8c-b1c0-2d72da606a79-data\") pod \"helm-operation-x8jvh\" (UID: \"72d8a4f4-d397-4c8c-b1c0-2d72da606a79\") " pod="cattle-system/helm-operation-x8jvh"
+I1002 17:05:37.115881      71 reconciler_common.go:253] "operationExecutor.VerifyControllerAttachedVolume started for volume \"pod-impersonation-helm-op-qv9bh-token\" (UniqueName: \"kubernetes.io/secret/72d8a4f4-d397-4c8c-b1c0-2d72da606a79-pod-impersonation-helm-op-qv9bh-token\") pod \"helm-operation-x8jvh\" (UID: \"72d8a4f4-d397-4c8c-b1c0-2d72da606a79\") " pod="cattle-system/helm-operation-x8jvh"
+I1002 17:05:37.115954      71 reconciler_common.go:253] "operationExecutor.VerifyControllerAttachedVolume started for volume \"user-kubeconfig\" (UniqueName: \"kubernetes.io/configmap/72d8a4f4-d397-4c8c-b1c0-2d72da606a79-user-kubeconfig\") pod \"helm-operation-x8jvh\" (UID: \"72d8a4f4-d397-4c8c-b1c0-2d72da606a79\") " pod="cattle-system/helm-operation-x8jvh"
+I1002 17:05:37.216712      71 reconciler_common.go:169] "operationExecutor.UnmountVolume started for volume \"data\" (UniqueName: \"kubernetes.io/secret/5d673258-1fe4-4b7d-bc93-6b78f19af5f4-data\") pod \"5d673258-1fe4-4b7d-bc93-6b78f19af5f4\" (UID: \"5d673258-1fe4-4b7d-bc93-6b78f19af5f4\") "
+I1002 17:05:37.216750      71 reconciler_common.go:169] "operationExecutor.UnmountVolume started for volume \"pod-impersonation-helm-op-mbn66-token\" (UniqueName: \"kubernetes.io/secret/5d673258-1fe4-4b7d-bc93-6b78f19af5f4-pod-impersonation-helm-op-mbn66-token\") pod \"5d673258-1fe4-4b7d-bc93-6b78f19af5f4\" (UID: \"5d673258-1fe4-4b7d-bc93-6b78f19af5f4\") "
+I1002 17:05:37.216778      71 reconciler_common.go:169] "operationExecutor.UnmountVolume started for volume \"user-kubeconfig\" (UniqueName: \"kubernetes.io/configmap/5d673258-1fe4-4b7d-bc93-6b78f19af5f4-user-kubeconfig\") pod \"5d673258-1fe4-4b7d-bc93-6b78f19af5f4\" (UID: \"5d673258-1fe4-4b7d-bc93-6b78f19af5f4\") "
+I1002 17:05:37.216805      71 reconciler_common.go:169] "operationExecutor.UnmountVolume started for volume \"admin-kubeconfig\" (UniqueName: \"kubernetes.io/configmap/5d673258-1fe4-4b7d-bc93-6b78f19af5f4-admin-kubeconfig\") pod \"5d673258-1fe4-4b7d-bc93-6b78f19af5f4\" (UID: \"5d673258-1fe4-4b7d-bc93-6b78f19af5f4\") "
+W1002 17:05:37.219135      71 empty_dir.go:525] Warning: Failed to clear quota on /var/lib/kubelet/pods/5d673258-1fe4-4b7d-bc93-6b78f19af5f4/volumes/kubernetes.io~configmap/admin-kubeconfig: clearQuota called, but quotas disabled
+I1002 17:05:37.219311      71 operation_generator.go:900] UnmountVolume.TearDown succeeded for volume "kubernetes.io/configmap/5d673258-1fe4-4b7d-bc93-6b78f19af5f4-admin-kubeconfig" (OuterVolumeSpecName: "admin-kubeconfig") pod "5d673258-1fe4-4b7d-bc93-6b78f19af5f4" (UID: "5d673258-1fe4-4b7d-bc93-6b78f19af5f4"). InnerVolumeSpecName "admin-kubeconfig". PluginName "kubernetes.io/configmap", VolumeGidValue ""
+I1002 17:05:37.219342      71 operation_generator.go:900] UnmountVolume.TearDown succeeded for volume "kubernetes.io/secret/5d673258-1fe4-4b7d-bc93-6b78f19af5f4-data" (OuterVolumeSpecName: "data") pod "5d673258-1fe4-4b7d-bc93-6b78f19af5f4" (UID: "5d673258-1fe4-4b7d-bc93-6b78f19af5f4"). InnerVolumeSpecName "data". PluginName "kubernetes.io/secret", VolumeGidValue ""
+I1002 17:05:37.219495      71 operation_generator.go:900] UnmountVolume.TearDown succeeded for volume "kubernetes.io/secret/5d673258-1fe4-4b7d-bc93-6b78f19af5f4-pod-impersonation-helm-op-mbn66-token" (OuterVolumeSpecName: "pod-impersonation-helm-op-mbn66-token") pod "5d673258-1fe4-4b7d-bc93-6b78f19af5f4" (UID: "5d673258-1fe4-4b7d-bc93-6b78f19af5f4"). InnerVolumeSpecName "pod-impersonation-helm-op-mbn66-token". PluginName "kubernetes.io/secret", VolumeGidValue ""
+W1002 17:05:37.219624      71 empty_dir.go:525] Warning: Failed to clear quota on /var/lib/kubelet/pods/5d673258-1fe4-4b7d-bc93-6b78f19af5f4/volumes/kubernetes.io~configmap/user-kubeconfig: clearQuota called, but quotas disabled
+I1002 17:05:37.220072      71 operation_generator.go:900] UnmountVolume.TearDown succeeded for volume "kubernetes.io/configmap/5d673258-1fe4-4b7d-bc93-6b78f19af5f4-user-kubeconfig" (OuterVolumeSpecName: "user-kubeconfig") pod "5d673258-1fe4-4b7d-bc93-6b78f19af5f4" (UID: "5d673258-1fe4-4b7d-bc93-6b78f19af5f4"). InnerVolumeSpecName "user-kubeconfig". PluginName "kubernetes.io/configmap", VolumeGidValue ""
+I1002 17:05:37.317979      71 reconciler_common.go:295] "Volume detached for volume \"pod-impersonation-helm-op-mbn66-token\" (UniqueName: \"kubernetes.io/secret/5d673258-1fe4-4b7d-bc93-6b78f19af5f4-pod-impersonation-helm-op-mbn66-token\") on node \"local-node\" DevicePath \"\""
+I1002 17:05:37.318022      71 reconciler_common.go:295] "Volume detached for volume \"admin-kubeconfig\" (UniqueName: \"kubernetes.io/configmap/5d673258-1fe4-4b7d-bc93-6b78f19af5f4-admin-kubeconfig\") on node \"local-node\" DevicePath \"\""
+I1002 17:05:37.318047      71 reconciler_common.go:295] "Volume detached for volume \"user-kubeconfig\" (UniqueName: \"kubernetes.io/configmap/5d673258-1fe4-4b7d-bc93-6b78f19af5f4-user-kubeconfig\") on node \"local-node\" DevicePath \"\""
+I1002 17:05:37.318068      71 reconciler_common.go:295] "Volume detached for volume \"data\" (UniqueName: \"kubernetes.io/secret/5d673258-1fe4-4b7d-bc93-6b78f19af5f4-data\") on node \"local-node\" DevicePath \"\""
+I1002 17:05:37.519847      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for gitrepos.fleet.cattle.io
+I1002 17:05:37.519924      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for imagescans.fleet.cattle.io
+I1002 17:05:37.519982      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for bundledeployments.fleet.cattle.io
+I1002 17:05:37.520136      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for gitreporestrictions.fleet.cattle.io
+I1002 17:05:37.520204      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for clusterregistrationtokens.fleet.cattle.io
+I1002 17:05:37.520259      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for bundlenamespacemappings.fleet.cattle.io
+I1002 17:05:37.520336      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for clusterregistrations.fleet.cattle.io
+I1002 17:05:37.520399      71 resource_quota_monitor.go:218] QuotaMonitor created object count evaluator for gitjobs.gitjob.cattle.io
+I1002 17:05:37.520693      71 shared_informer.go:270] Waiting for caches to sync for resource quota
+I1002 17:05:37.621287      71 shared_informer.go:277] Caches are synced for resource quota
+I1002 17:05:37.960709      71 pod_container_deletor.go:80] "Container not found in pod's containers" containerID="528581558a9c0f5ab5a53ee9e57c8ffb770266ea62def395fabe28b9cc26a42d"
+I1002 17:05:38.898663      71 alloc.go:327] "allocated clusterIPs" service="cattle-system/rancher-webhook" clusterIPs=map[IPv4:10.43.224.182]
+I1002 17:05:38.901318      71 alloc.go:327] "allocated clusterIPs" service="cattle-system/webhook-service" clusterIPs=map[IPv4:10.43.238.117]
+I1002 17:05:38.909619      71 event.go:294] "Event occurred" object="cattle-system/rancher-webhook" fieldPath="" kind="Deployment" apiVersion="apps/v1" type="Normal" reason="ScalingReplicaSet" message="Scaled up replica set rancher-webhook-c85db8b75 to 1"
+I1002 17:05:38.913047      71 event.go:294] "Event occurred" object="cattle-system/rancher-webhook-c85db8b75" fieldPath="" kind="ReplicaSet" apiVersion="apps/v1" type="Normal" reason="SuccessfulCreate" message="Created pod: rancher-webhook-c85db8b75-psm9s"
+I1002 17:05:38.917054      71 pod_startup_latency_tracker.go:102] "Observed pod startup duration" pod="cattle-system/helm-operation-x8jvh" podStartSLOduration=1.9170150289999999 pod.CreationTimestamp="2024-10-02 17:05:37 +0000 UTC" firstStartedPulling="0001-01-01 00:00:00 +0000 UTC" lastFinishedPulling="0001-01-01 00:00:00 +0000 UTC" observedRunningTime="2024-10-02 17:05:37.988466606 +0000 UTC m=+83.715464617" watchObservedRunningTime="2024-10-02 17:05:38.917015029 +0000 UTC m=+84.644013010"
+I1002 17:05:38.917164      71 topology_manager.go:210] "Topology Admit Handler"
+E1002 17:05:38.917236      71 cpu_manager.go:395] "RemoveStaleState: removing container" podUID="5d673258-1fe4-4b7d-bc93-6b78f19af5f4" containerName="helm"
+E1002 17:05:38.917283      71 cpu_manager.go:395] "RemoveStaleState: removing container" podUID="5d673258-1fe4-4b7d-bc93-6b78f19af5f4" containerName="proxy"
+I1002 17:05:38.917444      71 memory_manager.go:346] "RemoveStaleState removing state" podUID="5d673258-1fe4-4b7d-bc93-6b78f19af5f4" containerName="helm"
+I1002 17:05:38.917492      71 memory_manager.go:346] "RemoveStaleState removing state" podUID="5d673258-1fe4-4b7d-bc93-6b78f19af5f4" containerName="proxy"
+I1002 17:05:39.025180      71 reconciler_common.go:253] "operationExecutor.VerifyControllerAttachedVolume started for volume \"tls\" (UniqueName: \"kubernetes.io/secret/8dff3dbd-1ae4-4c76-bb46-99c9ee2c9316-tls\") pod \"rancher-webhook-c85db8b75-psm9s\" (UID: \"8dff3dbd-1ae4-4c76-bb46-99c9ee2c9316\") " pod="cattle-system/rancher-webhook-c85db8b75-psm9s"
+I1002 17:05:39.025234      71 reconciler_common.go:253] "operationExecutor.VerifyControllerAttachedVolume started for volume \"kube-api-access-vm5lq\" (UniqueName: \"kubernetes.io/projected/8dff3dbd-1ae4-4c76-bb46-99c9ee2c9316-kube-api-access-vm5lq\") pod \"rancher-webhook-c85db8b75-psm9s\" (UID: \"8dff3dbd-1ae4-4c76-bb46-99c9ee2c9316\") " pod="cattle-system/rancher-webhook-c85db8b75-psm9s"
+I1002 17:05:39.061105      71 shared_informer.go:270] Waiting for caches to sync for garbage collector
+E1002 17:05:39.126149      71 secret.go:194] Couldn't get secret cattle-system/rancher-webhook-tls: secret "rancher-webhook-tls" not found
+E1002 17:05:39.126207      71 nestedpendingoperations.go:348] Operation for "{volumeName:kubernetes.io/secret/8dff3dbd-1ae4-4c76-bb46-99c9ee2c9316-tls podName:8dff3dbd-1ae4-4c76-bb46-99c9ee2c9316 nodeName:}" failed. No retries permitted until 2024-10-02 17:05:39.626192309 +0000 UTC m=+85.353190280 (durationBeforeRetry 500ms). Error: MountVolume.SetUp failed for volume "tls" (UniqueName: "kubernetes.io/secret/8dff3dbd-1ae4-4c76-bb46-99c9ee2c9316-tls") pod "rancher-webhook-c85db8b75-psm9s" (UID: "8dff3dbd-1ae4-4c76-bb46-99c9ee2c9316") : secret "rancher-webhook-tls" not found
+I1002 17:05:39.161502      71 shared_informer.go:277] Caches are synced for garbage collector
+I1002 17:05:45.988443      71 pod_startup_latency_tracker.go:102] "Observed pod startup duration" pod="cattle-system/rancher-webhook-c85db8b75-psm9s" podStartSLOduration=-9.223372028866373e+09 pod.CreationTimestamp="2024-10-02 17:05:38 +0000 UTC" firstStartedPulling="2024-10-02 17:05:39.930194033 +0000 UTC m=+85.657192004" lastFinishedPulling="0001-01-01 00:00:00 +0000 UTC" observedRunningTime="2024-10-02 17:05:45.988091223 +0000 UTC m=+91.715089234" watchObservedRunningTime="2024-10-02 17:05:45.988403015 +0000 UTC m=+91.715400987"
+I1002 17:06:06.015573      71 scope.go:115] "RemoveContainer" containerID="969d619623f2215680788d6368cc4745beaf8cc1862e028cc07a65699cc5a5b4"
+I1002 17:06:08.185877      71 reconciler_common.go:169] "operationExecutor.UnmountVolume started for volume \"pod-impersonation-helm-op-qv9bh-token\" (UniqueName: \"kubernetes.io/secret/72d8a4f4-d397-4c8c-b1c0-2d72da606a79-pod-impersonation-helm-op-qv9bh-token\") pod \"72d8a4f4-d397-4c8c-b1c0-2d72da606a79\" (UID: \"72d8a4f4-d397-4c8c-b1c0-2d72da606a79\") "
+I1002 17:06:08.185956      71 reconciler_common.go:169] "operationExecutor.UnmountVolume started for volume \"admin-kubeconfig\" (UniqueName: \"kubernetes.io/configmap/72d8a4f4-d397-4c8c-b1c0-2d72da606a79-admin-kubeconfig\") pod \"72d8a4f4-d397-4c8c-b1c0-2d72da606a79\" (UID: \"72d8a4f4-d397-4c8c-b1c0-2d72da606a79\") "
+I1002 17:06:08.186019      71 reconciler_common.go:169] "operationExecutor.UnmountVolume started for volume \"data\" (UniqueName: \"kubernetes.io/secret/72d8a4f4-d397-4c8c-b1c0-2d72da606a79-data\") pod \"72d8a4f4-d397-4c8c-b1c0-2d72da606a79\" (UID: \"72d8a4f4-d397-4c8c-b1c0-2d72da606a79\") "
+I1002 17:06:08.186090      71 reconciler_common.go:169] "operationExecutor.UnmountVolume started for volume \"user-kubeconfig\" (UniqueName: \"kubernetes.io/configmap/72d8a4f4-d397-4c8c-b1c0-2d72da606a79-user-kubeconfig\") pod \"72d8a4f4-d397-4c8c-b1c0-2d72da606a79\" (UID: \"72d8a4f4-d397-4c8c-b1c0-2d72da606a79\") "
+W1002 17:06:08.188864      71 empty_dir.go:525] Warning: Failed to clear quota on /var/lib/kubelet/pods/72d8a4f4-d397-4c8c-b1c0-2d72da606a79/volumes/kubernetes.io~configmap/admin-kubeconfig: clearQuota called, but quotas disabled
+I1002 17:06:08.189346      71 operation_generator.go:900] UnmountVolume.TearDown succeeded for volume "kubernetes.io/secret/72d8a4f4-d397-4c8c-b1c0-2d72da606a79-pod-impersonation-helm-op-qv9bh-token" (OuterVolumeSpecName: "pod-impersonation-helm-op-qv9bh-token") pod "72d8a4f4-d397-4c8c-b1c0-2d72da606a79" (UID: "72d8a4f4-d397-4c8c-b1c0-2d72da606a79"). InnerVolumeSpecName "pod-impersonation-helm-op-qv9bh-token". PluginName "kubernetes.io/secret", VolumeGidValue ""
+I1002 17:06:08.189416      71 operation_generator.go:900] UnmountVolume.TearDown succeeded for volume "kubernetes.io/configmap/72d8a4f4-d397-4c8c-b1c0-2d72da606a79-admin-kubeconfig" (OuterVolumeSpecName: "admin-kubeconfig") pod "72d8a4f4-d397-4c8c-b1c0-2d72da606a79" (UID: "72d8a4f4-d397-4c8c-b1c0-2d72da606a79"). InnerVolumeSpecName "admin-kubeconfig". PluginName "kubernetes.io/configmap", VolumeGidValue ""
+I1002 17:06:08.190898      71 operation_generator.go:900] UnmountVolume.TearDown succeeded for volume "kubernetes.io/secret/72d8a4f4-d397-4c8c-b1c0-2d72da606a79-data" (OuterVolumeSpecName: "data") pod "72d8a4f4-d397-4c8c-b1c0-2d72da606a79" (UID: "72d8a4f4-d397-4c8c-b1c0-2d72da606a79"). InnerVolumeSpecName "data". PluginName "kubernetes.io/secret", VolumeGidValue ""
+W1002 17:06:08.191737      71 empty_dir.go:525] Warning: Failed to clear quota on /var/lib/kubelet/pods/72d8a4f4-d397-4c8c-b1c0-2d72da606a79/volumes/kubernetes.io~configmap/user-kubeconfig: clearQuota called, but quotas disabled
+I1002 17:06:08.192096      71 operation_generator.go:900] UnmountVolume.TearDown succeeded for volume "kubernetes.io/configmap/72d8a4f4-d397-4c8c-b1c0-2d72da606a79-user-kubeconfig" (OuterVolumeSpecName: "user-kubeconfig") pod "72d8a4f4-d397-4c8c-b1c0-2d72da606a79" (UID: "72d8a4f4-d397-4c8c-b1c0-2d72da606a79"). InnerVolumeSpecName "user-kubeconfig". PluginName "kubernetes.io/configmap", VolumeGidValue ""
+I1002 17:06:08.286748      71 reconciler_common.go:295] "Volume detached for volume \"admin-kubeconfig\" (UniqueName: \"kubernetes.io/configmap/72d8a4f4-d397-4c8c-b1c0-2d72da606a79-admin-kubeconfig\") on node \"local-node\" DevicePath \"\""
+I1002 17:06:08.286792      71 reconciler_common.go:295] "Volume detached for volume \"data\" (UniqueName: \"kubernetes.io/secret/72d8a4f4-d397-4c8c-b1c0-2d72da606a79-data\") on node \"local-node\" DevicePath \"\""
+I1002 17:06:08.286823      71 reconciler_common.go:295] "Volume detached for volume \"user-kubeconfig\" (UniqueName: \"kubernetes.io/configmap/72d8a4f4-d397-4c8c-b1c0-2d72da606a79-user-kubeconfig\") on node \"local-node\" DevicePath \"\""
+I1002 17:06:08.286855      71 reconciler_common.go:295] "Volume detached for volume \"pod-impersonation-helm-op-qv9bh-token\" (UniqueName: \"kubernetes.io/secret/72d8a4f4-d397-4c8c-b1c0-2d72da606a79-pod-impersonation-helm-op-qv9bh-token\") on node \"local-node\" DevicePath \"\""
+I1002 17:06:09.023179      71 pod_container_deletor.go:80] "Container not found in pod's containers" containerID="310733821e5829236390aaabdcd349c94c4bac6685e4b58bf3368ba360fadaba"
+W1002 17:09:21.795067      71 info.go:53] Couldn't collect info from any of the files in "/etc/machine-id,/var/lib/dbus/machine-id"
+I1002 17:12:43.220690      71 controller.go:615] quota admission added evaluator for: preferences.management.cattle.io
+I1002 17:12:45.553029      71 topology_manager.go:210] "Topology Admit Handler"
+E1002 17:12:45.553066      71 cpu_manager.go:395] "RemoveStaleState: removing container" podUID="72d8a4f4-d397-4c8c-b1c0-2d72da606a79" containerName="helm"
+E1002 17:12:45.553076      71 cpu_manager.go:395] "RemoveStaleState: removing container" podUID="72d8a4f4-d397-4c8c-b1c0-2d72da606a79" containerName="proxy"
+I1002 17:12:45.553098      71 memory_manager.go:346] "RemoveStaleState removing state" podUID="72d8a4f4-d397-4c8c-b1c0-2d72da606a79" containerName="helm"
+I1002 17:12:45.553108      71 memory_manager.go:346] "RemoveStaleState removing state" podUID="72d8a4f4-d397-4c8c-b1c0-2d72da606a79" containerName="proxy"
+I1002 17:12:45.661341      71 reconciler_common.go:253] "operationExecutor.VerifyControllerAttachedVolume started for volume \"admin-kubeconfig\" (UniqueName: \"kubernetes.io/configmap/7090c78d-d13c-46de-9e0f-3e0f49080302-admin-kubeconfig\") pod \"helm-operation-tzk4q\" (UID: \"7090c78d-d13c-46de-9e0f-3e0f49080302\") " pod="cattle-system/helm-operation-tzk4q"
+I1002 17:12:45.661375      71 reconciler_common.go:253] "operationExecutor.VerifyControllerAttachedVolume started for volume \"data\" (UniqueName: \"kubernetes.io/secret/7090c78d-d13c-46de-9e0f-3e0f49080302-data\") pod \"helm-operation-tzk4q\" (UID: \"7090c78d-d13c-46de-9e0f-3e0f49080302\") " pod="cattle-system/helm-operation-tzk4q"
+I1002 17:12:45.661396      71 reconciler_common.go:253] "operationExecutor.VerifyControllerAttachedVolume started for volume \"user-kubeconfig\" (UniqueName: \"kubernetes.io/configmap/7090c78d-d13c-46de-9e0f-3e0f49080302-user-kubeconfig\") pod \"helm-operation-tzk4q\" (UID: \"7090c78d-d13c-46de-9e0f-3e0f49080302\") " pod="cattle-system/helm-operation-tzk4q"
+I1002 17:12:45.661470      71 reconciler_common.go:253] "operationExecutor.VerifyControllerAttachedVolume started for volume \"pod-impersonation-helm-op-pkjng-token\" (UniqueName: \"kubernetes.io/secret/7090c78d-d13c-46de-9e0f-3e0f49080302-pod-impersonation-helm-op-pkjng-token\") pod \"helm-operation-tzk4q\" (UID: \"7090c78d-d13c-46de-9e0f-3e0f49080302\") " pod="cattle-system/helm-operation-tzk4q"
+I1002 17:12:46.797323      71 pod_startup_latency_tracker.go:102] "Observed pod startup duration" pod="cattle-system/helm-operation-tzk4q" podStartSLOduration=1.797252708 pod.CreationTimestamp="2024-10-02 17:12:45 +0000 UTC" firstStartedPulling="0001-01-01 00:00:00 +0000 UTC" lastFinishedPulling="0001-01-01 00:00:00 +0000 UTC" observedRunningTime="2024-10-02 17:12:46.796911971 +0000 UTC m=+512.523909993" watchObservedRunningTime="2024-10-02 17:12:46.797252708 +0000 UTC m=+512.524250719"
+I1002 17:12:48.787543      71 scope.go:115] "RemoveContainer" containerID="237a77d8064cdccb29ad376a141b91914218eacc63edfa4ce33d2257e3294854"
+I1002 17:12:50.997544      71 reconciler_common.go:169] "operationExecutor.UnmountVolume started for volume \"data\" (UniqueName: \"kubernetes.io/secret/7090c78d-d13c-46de-9e0f-3e0f49080302-data\") pod \"7090c78d-d13c-46de-9e0f-3e0f49080302\" (UID: \"7090c78d-d13c-46de-9e0f-3e0f49080302\") "
+I1002 17:12:50.997649      71 reconciler_common.go:169] "operationExecutor.UnmountVolume started for volume \"admin-kubeconfig\" (UniqueName: \"kubernetes.io/configmap/7090c78d-d13c-46de-9e0f-3e0f49080302-admin-kubeconfig\") pod \"7090c78d-d13c-46de-9e0f-3e0f49080302\" (UID: \"7090c78d-d13c-46de-9e0f-3e0f49080302\") "
+I1002 17:12:50.997727      71 reconciler_common.go:169] "operationExecutor.UnmountVolume started for volume \"pod-impersonation-helm-op-pkjng-token\" (UniqueName: \"kubernetes.io/secret/7090c78d-d13c-46de-9e0f-3e0f49080302-pod-impersonation-helm-op-pkjng-token\") pod \"7090c78d-d13c-46de-9e0f-3e0f49080302\" (UID: \"7090c78d-d13c-46de-9e0f-3e0f49080302\") "
+I1002 17:12:50.997782      71 reconciler_common.go:169] "operationExecutor.UnmountVolume started for volume \"user-kubeconfig\" (UniqueName: \"kubernetes.io/configmap/7090c78d-d13c-46de-9e0f-3e0f49080302-user-kubeconfig\") pod \"7090c78d-d13c-46de-9e0f-3e0f49080302\" (UID: \"7090c78d-d13c-46de-9e0f-3e0f49080302\") "
+W1002 17:12:51.001727      71 empty_dir.go:525] Warning: Failed to clear quota on /var/lib/kubelet/pods/7090c78d-d13c-46de-9e0f-3e0f49080302/volumes/kubernetes.io~configmap/admin-kubeconfig: clearQuota called, but quotas disabled
+I1002 17:12:51.001987      71 operation_generator.go:900] UnmountVolume.TearDown succeeded for volume "kubernetes.io/secret/7090c78d-d13c-46de-9e0f-3e0f49080302-data" (OuterVolumeSpecName: "data") pod "7090c78d-d13c-46de-9e0f-3e0f49080302" (UID: "7090c78d-d13c-46de-9e0f-3e0f49080302"). InnerVolumeSpecName "data". PluginName "kubernetes.io/secret", VolumeGidValue ""
+I1002 17:12:51.002144      71 operation_generator.go:900] UnmountVolume.TearDown succeeded for volume "kubernetes.io/configmap/7090c78d-d13c-46de-9e0f-3e0f49080302-admin-kubeconfig" (OuterVolumeSpecName: "admin-kubeconfig") pod "7090c78d-d13c-46de-9e0f-3e0f49080302" (UID: "7090c78d-d13c-46de-9e0f-3e0f49080302"). InnerVolumeSpecName "admin-kubeconfig". PluginName "kubernetes.io/configmap", VolumeGidValue ""
+I1002 17:12:51.002464      71 operation_generator.go:900] UnmountVolume.TearDown succeeded for volume "kubernetes.io/secret/7090c78d-d13c-46de-9e0f-3e0f49080302-pod-impersonation-helm-op-pkjng-token" (OuterVolumeSpecName: "pod-impersonation-helm-op-pkjng-token") pod "7090c78d-d13c-46de-9e0f-3e0f49080302" (UID: "7090c78d-d13c-46de-9e0f-3e0f49080302"). InnerVolumeSpecName "pod-impersonation-helm-op-pkjng-token". PluginName "kubernetes.io/secret", VolumeGidValue ""
+W1002 17:12:51.003235      71 empty_dir.go:525] Warning: Failed to clear quota on /var/lib/kubelet/pods/7090c78d-d13c-46de-9e0f-3e0f49080302/volumes/kubernetes.io~configmap/user-kubeconfig: clearQuota called, but quotas disabled
+I1002 17:12:51.003597      71 operation_generator.go:900] UnmountVolume.TearDown succeeded for volume "kubernetes.io/configmap/7090c78d-d13c-46de-9e0f-3e0f49080302-user-kubeconfig" (OuterVolumeSpecName: "user-kubeconfig") pod "7090c78d-d13c-46de-9e0f-3e0f49080302" (UID: "7090c78d-d13c-46de-9e0f-3e0f49080302"). InnerVolumeSpecName "user-kubeconfig". PluginName "kubernetes.io/configmap", VolumeGidValue ""
+I1002 17:12:51.098546      71 reconciler_common.go:295] "Volume detached for volume \"admin-kubeconfig\" (UniqueName: \"kubernetes.io/configmap/7090c78d-d13c-46de-9e0f-3e0f49080302-admin-kubeconfig\") on node \"local-node\" DevicePath \"\""
+I1002 17:12:51.098586      71 reconciler_common.go:295] "Volume detached for volume \"data\" (UniqueName: \"kubernetes.io/secret/7090c78d-d13c-46de-9e0f-3e0f49080302-data\") on node \"local-node\" DevicePath \"\""
+I1002 17:12:51.098612      71 reconciler_common.go:295] "Volume detached for volume \"user-kubeconfig\" (UniqueName: \"kubernetes.io/configmap/7090c78d-d13c-46de-9e0f-3e0f49080302-user-kubeconfig\") on node \"local-node\" DevicePath \"\""
+I1002 17:12:51.098638      71 reconciler_common.go:295] "Volume detached for volume \"pod-impersonation-helm-op-pkjng-token\" (UniqueName: \"kubernetes.io/secret/7090c78d-d13c-46de-9e0f-3e0f49080302-pod-impersonation-helm-op-pkjng-token\") on node \"local-node\" DevicePath \"\""
+I1002 17:12:51.797663      71 pod_container_deletor.go:80] "Container not found in pod's containers" containerID="23491e759fb5d353eee044644aed80b35a51f89b6b88bf7a2b87432bc85eabf7"
+time="2024-10-02T17:14:01Z" level=info msg="certificate CN=k3s,O=k3s signed by CN=k3s-server-ca@1727888654: notBefore=2024-10-02 17:04:14 +0000 UTC notAfter=2025-10-02 17:14:01 +0000 UTC"
+time="2024-10-02T17:14:01Z" level=info msg="Updating TLS secret for kube-system/k3s-serving (count: 12): map[field.cattle.io/projectId:local:p-2kq2j listener.cattle.io/cn-10.43.0.1:10.43.0.1 listener.cattle.io/cn-10.43.62.16:10.43.62.16 listener.cattle.io/cn-127.0.0.1:127.0.0.1 listener.cattle.io/cn-172.19.0.2:172.19.0.2 listener.cattle.io/cn-__1-f16284:::1 listener.cattle.io/cn-kubernetes:kubernetes listener.cattle.io/cn-kubernetes.default:kubernetes.default listener.cattle.io/cn-kubernetes.default.svc:kubernetes.default.svc listener.cattle.io/cn-kubernetes.default.svc.cluster.local:kubernetes.default.svc.cluster.local listener.cattle.io/cn-local-node:local-node listener.cattle.io/cn-localhost:localhost listener.cattle.io/fingerprint:SHA1=D8ED1B2F254A424044C5400870E267F2220ACC64]"
+I1002 17:14:01.443402      71 controller.go:615] quota admission added evaluator for: clusterregistrationtokens.fleet.cattle.io
+time="2024-10-02T17:14:01Z" level=info msg="Active TLS secret kube-system/k3s-serving (ver=6915) (count 12): map[field.cattle.io/projectId:local:p-2kq2j listener.cattle.io/cn-10.43.0.1:10.43.0.1 listener.cattle.io/cn-10.43.62.16:10.43.62.16 listener.cattle.io/cn-127.0.0.1:127.0.0.1 listener.cattle.io/cn-172.19.0.2:172.19.0.2 listener.cattle.io/cn-__1-f16284:::1 listener.cattle.io/cn-kubernetes:kubernetes listener.cattle.io/cn-kubernetes.default:kubernetes.default listener.cattle.io/cn-kubernetes.default.svc:kubernetes.default.svc listener.cattle.io/cn-kubernetes.default.svc.cluster.local:kubernetes.default.svc.cluster.local listener.cattle.io/cn-local-node:local-node listener.cattle.io/cn-localhost:localhost listener.cattle.io/fingerprint:SHA1=D8ED1B2F254A424044C5400870E267F2220ACC64]"
+time="2024-10-02T17:14:01Z" level=info msg="Updating TLS secret for kube-system/k3s-serving (count: 12): map[field.cattle.io/projectId:local:p-2kq2j listener.cattle.io/cn-10.43.0.1:10.43.0.1 listener.cattle.io/cn-10.43.62.16:10.43.62.16 listener.cattle.io/cn-127.0.0.1:127.0.0.1 listener.cattle.io/cn-172.19.0.2:172.19.0.2 listener.cattle.io/cn-__1-f16284:::1 listener.cattle.io/cn-kubernetes:kubernetes listener.cattle.io/cn-kubernetes.default:kubernetes.default listener.cattle.io/cn-kubernetes.default.svc:kubernetes.default.svc listener.cattle.io/cn-kubernetes.default.svc.cluster.local:kubernetes.default.svc.cluster.local listener.cattle.io/cn-local-node:local-node listener.cattle.io/cn-localhost:localhost listener.cattle.io/fingerprint:SHA1=D8ED1B2F254A424044C5400870E267F2220ACC64]"
+I1002 17:14:03.694446      71 event.go:294] "Event occurred" object="cattle-fleet-local-system/fleet-agent" fieldPath="" kind="Deployment" apiVersion="apps/v1" type="Normal" reason="ScalingReplicaSet" message="Scaled up replica set fleet-agent-57ff9d9f8b to 1"
+I1002 17:14:03.700158      71 event.go:294] "Event occurred" object="cattle-fleet-local-system/fleet-agent-57ff9d9f8b" fieldPath="" kind="ReplicaSet" apiVersion="apps/v1" type="Normal" reason="SuccessfulCreate" message="Created pod: fleet-agent-57ff9d9f8b-k4btf"
+I1002 17:14:03.700937      71 controller.go:615] quota admission added evaluator for: networkpolicies.networking.k8s.io
+I1002 17:14:03.705198      71 topology_manager.go:210] "Topology Admit Handler"
+E1002 17:14:03.705296      71 cpu_manager.go:395] "RemoveStaleState: removing container" podUID="7090c78d-d13c-46de-9e0f-3e0f49080302" containerName="proxy"
+E1002 17:14:03.705315      71 cpu_manager.go:395] "RemoveStaleState: removing container" podUID="7090c78d-d13c-46de-9e0f-3e0f49080302" containerName="helm"
+I1002 17:14:03.705342      71 memory_manager.go:346] "RemoveStaleState removing state" podUID="7090c78d-d13c-46de-9e0f-3e0f49080302" containerName="proxy"
+I1002 17:14:03.705351      71 memory_manager.go:346] "RemoveStaleState removing state" podUID="7090c78d-d13c-46de-9e0f-3e0f49080302" containerName="helm"
+I1002 17:14:03.771174      71 event.go:294] "Event occurred" object="cattle-fleet-local-system/fleet-agent-57ff9d9f8b" fieldPath="" kind="ReplicaSet" apiVersion="apps/v1" type="Normal" reason="SuccessfulCreate" message="Created pod: fleet-agent-57ff9d9f8b-xtdjc"
+I1002 17:14:03.776352      71 topology_manager.go:210] "Topology Admit Handler"
+E1002 17:14:03.776960      71 replica_set.go:544] sync "cattle-fleet-local-system/fleet-agent-57ff9d9f8b" failed with replicasets.apps "fleet-agent-57ff9d9f8b" not found
+I1002 17:14:03.806603      71 reconciler_common.go:253] "operationExecutor.VerifyControllerAttachedVolume started for volume \"kube-api-access-trkpg\" (UniqueName: \"kubernetes.io/projected/3e4a6442-0928-4b3a-abd2-521237bc47cc-kube-api-access-trkpg\") pod \"fleet-agent-57ff9d9f8b-k4btf\" (UID: \"3e4a6442-0928-4b3a-abd2-521237bc47cc\") " pod="cattle-fleet-local-system/fleet-agent-57ff9d9f8b-k4btf"
+I1002 17:14:03.834291      71 event.go:294] "Event occurred" object="cattle-fleet-local-system/fleet-agent" fieldPath="" kind="Deployment" apiVersion="apps/v1" type="Normal" reason="ScalingReplicaSet" message="Scaled up replica set fleet-agent-57ff9d9f8b to 1"
+I1002 17:14:03.837443      71 event.go:294] "Event occurred" object="cattle-fleet-local-system/fleet-agent-57ff9d9f8b" fieldPath="" kind="ReplicaSet" apiVersion="apps/v1" type="Normal" reason="SuccessfulCreate" message="Created pod: fleet-agent-57ff9d9f8b-n52pz"
+I1002 17:14:03.841271      71 topology_manager.go:210] "Topology Admit Handler"
+I1002 17:14:03.906769      71 reconciler_common.go:253] "operationExecutor.VerifyControllerAttachedVolume started for volume \"kube-api-access-cc8r2\" (UniqueName: \"kubernetes.io/projected/66346137-5fae-457e-a5c8-871d8f14a627-kube-api-access-cc8r2\") pod \"fleet-agent-57ff9d9f8b-xtdjc\" (UID: \"66346137-5fae-457e-a5c8-871d8f14a627\") " pod="cattle-fleet-local-system/fleet-agent-57ff9d9f8b-xtdjc"
+I1002 17:14:04.007182      71 reconciler_common.go:253] "operationExecutor.VerifyControllerAttachedVolume started for volume \"kube-api-access-cwhnp\" (UniqueName: \"kubernetes.io/projected/9c8a6b56-8df8-48db-8ed2-4e144e5a89c1-kube-api-access-cwhnp\") pod \"fleet-agent-57ff9d9f8b-n52pz\" (UID: \"9c8a6b56-8df8-48db-8ed2-4e144e5a89c1\") " pod="cattle-fleet-local-system/fleet-agent-57ff9d9f8b-n52pz"
+I1002 17:14:10.995463      71 pod_startup_latency_tracker.go:102] "Observed pod startup duration" pod="cattle-fleet-local-system/fleet-agent-57ff9d9f8b-xtdjc" podStartSLOduration=-9.223372028859365e+09 pod.CreationTimestamp="2024-10-02 17:14:03 +0000 UTC" firstStartedPulling="2024-10-02 17:14:04.222553881 +0000 UTC m=+589.949551852" lastFinishedPulling="0001-01-01 00:00:00 +0000 UTC" observedRunningTime="2024-10-02 17:14:10.982667012 +0000 UTC m=+596.709665054" watchObservedRunningTime="2024-10-02 17:14:10.995411139 +0000 UTC m=+596.722409120"
+I1002 17:14:10.995825      71 pod_startup_latency_tracker.go:102] "Observed pod startup duration" pod="cattle-fleet-local-system/fleet-agent-57ff9d9f8b-k4btf" podStartSLOduration=-9.223372028858978e+09 pod.CreationTimestamp="2024-10-02 17:14:03 +0000 UTC" firstStartedPulling="2024-10-02 17:14:04.120663578 +0000 UTC m=+589.847661549" lastFinishedPulling="0001-01-01 00:00:00 +0000 UTC" observedRunningTime="2024-10-02 17:14:10.995214435 +0000 UTC m=+596.722212436" watchObservedRunningTime="2024-10-02 17:14:10.995797642 +0000 UTC m=+596.722795623"
+I1002 17:14:11.002726      71 pod_startup_latency_tracker.go:102] "Observed pod startup duration" pod="cattle-fleet-local-system/fleet-agent-57ff9d9f8b-n52pz" podStartSLOduration=-9.223372028852093e+09 pod.CreationTimestamp="2024-10-02 17:14:03 +0000 UTC" firstStartedPulling="2024-10-02 17:14:04.262842944 +0000 UTC m=+589.989840915" lastFinishedPulling="0001-01-01 00:00:00 +0000 UTC" observedRunningTime="2024-10-02 17:14:11.002666057 +0000 UTC m=+596.729664038" watchObservedRunningTime="2024-10-02 17:14:11.002682378 +0000 UTC m=+596.729680349"
+I1002 17:14:11.346526      71 reconciler_common.go:169] "operationExecutor.UnmountVolume started for volume \"kube-api-access-trkpg\" (UniqueName: \"kubernetes.io/projected/3e4a6442-0928-4b3a-abd2-521237bc47cc-kube-api-access-trkpg\") pod \"3e4a6442-0928-4b3a-abd2-521237bc47cc\" (UID: \"3e4a6442-0928-4b3a-abd2-521237bc47cc\") "
+I1002 17:14:11.348467      71 operation_generator.go:900] UnmountVolume.TearDown succeeded for volume "kubernetes.io/projected/3e4a6442-0928-4b3a-abd2-521237bc47cc-kube-api-access-trkpg" (OuterVolumeSpecName: "kube-api-access-trkpg") pod "3e4a6442-0928-4b3a-abd2-521237bc47cc" (UID: "3e4a6442-0928-4b3a-abd2-521237bc47cc"). InnerVolumeSpecName "kube-api-access-trkpg". PluginName "kubernetes.io/projected", VolumeGidValue ""
+I1002 17:14:11.446690      71 reconciler_common.go:169] "operationExecutor.UnmountVolume started for volume \"kube-api-access-cc8r2\" (UniqueName: \"kubernetes.io/projected/66346137-5fae-457e-a5c8-871d8f14a627-kube-api-access-cc8r2\") pod \"66346137-5fae-457e-a5c8-871d8f14a627\" (UID: \"66346137-5fae-457e-a5c8-871d8f14a627\") "
+I1002 17:14:11.446769      71 reconciler_common.go:295] "Volume detached for volume \"kube-api-access-trkpg\" (UniqueName: \"kubernetes.io/projected/3e4a6442-0928-4b3a-abd2-521237bc47cc-kube-api-access-trkpg\") on node \"local-node\" DevicePath \"\""
+I1002 17:14:11.449186      71 operation_generator.go:900] UnmountVolume.TearDown succeeded for volume "kubernetes.io/projected/66346137-5fae-457e-a5c8-871d8f14a627-kube-api-access-cc8r2" (OuterVolumeSpecName: "kube-api-access-cc8r2") pod "66346137-5fae-457e-a5c8-871d8f14a627" (UID: "66346137-5fae-457e-a5c8-871d8f14a627"). InnerVolumeSpecName "kube-api-access-cc8r2". PluginName "kubernetes.io/projected", VolumeGidValue ""
+I1002 17:14:11.547507      71 reconciler_common.go:295] "Volume detached for volume \"kube-api-access-cc8r2\" (UniqueName: \"kubernetes.io/projected/66346137-5fae-457e-a5c8-871d8f14a627-kube-api-access-cc8r2\") on node \"local-node\" DevicePath \"\""
+I1002 17:14:11.978388      71 scope.go:115] "RemoveContainer" containerID="adbdde63a5b9272c0596dafe91dd413a7ca0980de865657f3eb170709f55c818"
+I1002 17:14:11.984508      71 scope.go:115] "RemoveContainer" containerID="adbdde63a5b9272c0596dafe91dd413a7ca0980de865657f3eb170709f55c818"
+E1002 17:14:11.984954      71 remote_runtime.go:415] "ContainerStatus from runtime service failed" err="rpc error: code = NotFound desc = an error occurred when try to find container \"adbdde63a5b9272c0596dafe91dd413a7ca0980de865657f3eb170709f55c818\": not found" containerID="adbdde63a5b9272c0596dafe91dd413a7ca0980de865657f3eb170709f55c818"
+I1002 17:14:11.985012      71 pod_container_deletor.go:53] "DeleteContainer returned error" containerID={Type:containerd ID:adbdde63a5b9272c0596dafe91dd413a7ca0980de865657f3eb170709f55c818} err="failed to get container status \"adbdde63a5b9272c0596dafe91dd413a7ca0980de865657f3eb170709f55c818\": rpc error: code = NotFound desc = an error occurred when try to find container \"adbdde63a5b9272c0596dafe91dd413a7ca0980de865657f3eb170709f55c818\": not found"
+I1002 17:14:11.985038      71 scope.go:115] "RemoveContainer" containerID="ba89c88c8db85ee2c5aa245367d9e535a189fdccc6de7efa0655372416cfc182"
+I1002 17:14:11.990409      71 scope.go:115] "RemoveContainer" containerID="ba89c88c8db85ee2c5aa245367d9e535a189fdccc6de7efa0655372416cfc182"
+E1002 17:14:11.990974      71 remote_runtime.go:415] "ContainerStatus from runtime service failed" err="rpc error: code = NotFound desc = an error occurred when try to find container \"ba89c88c8db85ee2c5aa245367d9e535a189fdccc6de7efa0655372416cfc182\": not found" containerID="ba89c88c8db85ee2c5aa245367d9e535a189fdccc6de7efa0655372416cfc182"
+I1002 17:14:11.991052      71 pod_container_deletor.go:53] "DeleteContainer returned error" containerID={Type:containerd ID:ba89c88c8db85ee2c5aa245367d9e535a189fdccc6de7efa0655372416cfc182} err="failed to get container status \"ba89c88c8db85ee2c5aa245367d9e535a189fdccc6de7efa0655372416cfc182\": rpc error: code = NotFound desc = an error occurred when try to find container \"ba89c88c8db85ee2c5aa245367d9e535a189fdccc6de7efa0655372416cfc182\": not found"
+I1002 17:14:13.813056      71 kubelet_volumes.go:160] "Cleaned up orphaned pod volumes dir" podUID=3e4a6442-0928-4b3a-abd2-521237bc47cc path="/var/lib/kubelet/pods/3e4a6442-0928-4b3a-abd2-521237bc47cc/volumes"
+I1002 17:14:13.813492      71 kubelet_volumes.go:160] "Cleaned up orphaned pod volumes dir" podUID=66346137-5fae-457e-a5c8-871d8f14a627 path="/var/lib/kubelet/pods/66346137-5fae-457e-a5c8-871d8f14a627/volumes"
+{"level":"info","ts":"2024-10-02T17:14:18.441Z","caller":"mvcc/index.go:214","msg":"compact tree index","revision":4930}
+{"level":"info","ts":"2024-10-02T17:14:18.540Z","caller":"mvcc/kvstore_compaction.go:66","msg":"finished scheduled compaction","compact-revision":4930,"took":"97.498996ms","hash":378501813}
+{"level":"info","ts":"2024-10-02T17:14:18.541Z","caller":"mvcc/hash.go:137","msg":"storing new hash","hash":378501813,"revision":4930,"compact-revision":-1}
+W1002 17:14:21.796081      71 info.go:53] Couldn't collect info from any of the files in "/etc/machine-id,/var/lib/dbus/machine-id"
